@@ -2,7 +2,11 @@ body {
     background-color: lightgray;
 }
 
-h1 {
-    padding: 5px;
+#main-page-head {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
     text-align: center;
 }
