@@ -7,11 +7,11 @@
     --bg-secondary: #141418;
     --transition-speed: 600ms;
   }
-  
 
   body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
-    background-color: white;
+    background-color: rgb(202, 202, 202);
     margin: 0;
     padding: 0;
   }
@@ -215,3 +215,14 @@
   .solar #solarIcon {
     display: block;
   }
+
+/* class for the index header */
+.index-div{
+  margin-top: 15em;
+}
+.index-opening {
+  font-size: 5em ;
+}
+.index-p {
+  font-size: 20px ;
+}
