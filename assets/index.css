@@ -11,6 +11,13 @@ header {
 #main-page-head {
     text-align: center;
 }
+#main-page-head a {
+    text-decoration: none;
+    color: black;
+}
+#main-page-head a:hover {
+    color: white;
+}
 
 /* styling for the nav bar  */
 nav {
