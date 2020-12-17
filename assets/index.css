@@ -2,9 +2,37 @@ body {
     background-color: lightgray;
 }
 
+header {
+    background-color: rgba(00,00,00,0.1) ;
+    padding-top: 10px;
+
+}
+
 #main-page-head {
     text-align: center;
 }
+
+/* styling for the nav bar  */
+nav {
+    background-color: gray;
+    color: black;
+    list-style: none;
+    text-align: center;
+    padding: 20px, 0, 20px, 0;
+}
+nav li {
+    display: inline-block;
+    padding-right: 50px;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav li a:hover {
+    color: white;
+}
+/* End of styling for the nav bar */
 
 p {
     font-size: 18px;
