@@ -86,11 +86,11 @@
   }
 
   .fa-primary {
-    color: #ff7eee;
+    color: #3FDAFF;
   }
 
   .fa-secondary {
-    color: #df49a6;
+    color: #3FB9FF;
   }
 
   .fa-primary,
@@ -225,4 +225,36 @@
 }
 .index-p {
   font-size: 20px ;
+}
+
+
+/* Contact page */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #3FB9FF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3FDAFF;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #A6A6A6;
+  padding: 20px;
 }
