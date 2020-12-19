@@ -245,30 +245,34 @@
 /* Contact page */
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  /* width: 400px; */
+  padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px 10px;
   box-sizing: border-box;
+  border-style: none;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical
-}
-
-input[type=submit] {
-  background-color: #3FB9FF;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #3FDAFF;
+  resize: vertical;
+  background-color: #DFF0F0;
 }
 
 .container {
   border-radius: 5px;
   background-color: #A6A6A6;
   padding: 20px;
+}
+
+/* submit button */
+input[type=submit] {
+  background-color: #3FB9FF;
+  color: white;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #3FDAFF;
 }
