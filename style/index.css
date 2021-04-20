@@ -1,0 +1,100 @@
+body{
+	height: 100%;
+	background-color: #222629;
+}
+/* Get rid of default styling */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Navbar */
+.navbar {
+    text-align: center;
+	background-color: white;
+	padding: 25px;
+}
+.navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+.navbar a:hover {
+    border-bottom: 5px solid blue;
+}
+
+/* Header Portion */
+.header {
+	background-color: #22262971;
+	height: 400px;
+}
+.header h1 {
+	text-align: center;
+	font-size: 400%;
+	color: white;
+	position: relative;
+	top: 2em;
+}
+.header h3 {
+	text-align: center;
+	font-size: 200%;
+	color: white;
+	position: relative;
+	top: 4em;
+}
+
+/* Container for everything */
+.everything {
+	background-color: white;
+	padding: 20px;
+}
+
+/* About Me */
+.about_me {
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.me {
+	vertical-align: baseline;
+}
+.me h2{
+	text-align: center;
+}
+.me p {
+	font-size: 17px;
+	line-height: 28px;
+}
+.picture {
+	-ms-flex-align: center;
+}
+.picture img {
+	width: 250px;
+	height: 250px;
+}
+.personal_info h4 {
+	border-bottom: 1px solid black;
+	font-size: 17px;
+	font-weight: normal;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+
+.fa-github-square {
+	width: 50px;
+	height: 50px;
+	color: blue;
+	box-shadow: 10px 5px 5px red;
+}
+.fa-linkedin {
+	width: 50px;
+	height: 50px;
+	color: blue;
+}
+i {
+	color: red;
+}
