@@ -58,23 +58,34 @@ body{
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
+/* Description about me */
 .me {
 	vertical-align: baseline;
 }
 .me h2{
 	text-align: center;
+	margin-bottom: 20px;
 }
 .me p {
 	font-size: 17px;
 	line-height: 28px;
 }
+/* Picture */
 .picture {
 	-ms-flex-align: center;
 }
 .picture img {
 	width: 250px;
 	height: 250px;
+	box-shadow: 5px 5px #6b6e7048;
+
+}
+/* Person info */
+.personal_info h2 {
+	margin-bottom: 20px;
 }
 .personal_info h4 {
 	border-bottom: 1px solid black;
@@ -83,18 +94,21 @@ body{
 	margin-bottom: 12px;
 	padding-bottom: 12px;
 }
-
-.fa-github-square {
-	width: 50px;
-	height: 50px;
-	color: blue;
-	box-shadow: 10px 5px 5px red;
+.github-link {
+	display: flex;
+	justify-content: space-around;
 }
-.fa-linkedin {
-	width: 50px;
-	height: 50px;
+.github-link a {
+	border: 1px solid #6b6e70;
+	border-radius: 50px;
+	padding: 10px;
+	box-shadow: 2px 2px #6b6e7057;
+}
+.fa-github {
+	font-size: 30px;
 	color: blue;
 }
-i {
-	color: red;
+.fa-linkedin-in {
+	font-size: 30px;
+	color: blue;
 }
