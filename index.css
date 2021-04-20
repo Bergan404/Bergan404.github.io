@@ -113,9 +113,9 @@ body{
 }
 .stars {
 	overflow: hidden;
-	height: 500px;
+	height: 400px;
 	position: relative;
-	bottom: 400px;
+	bottom: 300px;
 }
 #stars {
 	content:"e";
