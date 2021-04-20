@@ -72,6 +72,7 @@ body{
 .me p {
 	font-size: 17px;
 	line-height: 28px;
+	width: 382px;
 }
 /* Picture */
 .picture {
@@ -111,4 +112,43 @@ body{
 .fa-linkedin-in {
 	font-size: 30px;
 	color: blue;
+}
+
+
+/* Projects */
+.projects {
+
+}
+.projects h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.sites_container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+}
+.sites_container img {
+	width: 500px;
+	height: 300px;
+}
+.project-showcase {
+	margin: 10px 49px;
+	width: 500px;
+}
+.project-showcase p {
+	font-size: 17px;
+	line-height: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.project-showcase a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 24px;
 }
