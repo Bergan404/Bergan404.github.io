@@ -30,7 +30,6 @@ body{
 
 /* Header Portion */
 .header {
-	/* background-repeat: fixed 100%; */
 	background-color: #22262971;
 	height: 400px;
 }
@@ -184,5 +183,4 @@ body{
 /* Container for everything */
 .everything {
 	background-color: white;
-	/* height: 1000px; */
 }
