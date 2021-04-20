@@ -117,9 +117,6 @@ body{
 
 
 /* Projects */
-.projects {
-
-}
 .projects h1 {
 	text-align: center;
 	margin-bottom: 20px;
@@ -192,7 +189,6 @@ body{
 	padding: 20px;
 }
 input[type=text], textarea {
-	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -200,6 +196,20 @@ input[type=text], textarea {
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+}
+.other-inputs {
+	width: 100%;
+}
+.name-email {
+	width: 90%;
+}
+.fa-user {
+	font-size: 20px;
+	padding: 13px;
+}
+.fa-envelope {
+	font-size: 20px;
+	padding: 13px;
 }
 .button {
 	margin-left: auto;
