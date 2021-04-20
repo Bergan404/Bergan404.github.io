@@ -1,6 +1,18 @@
+body{
+	background-color: #222629;
+}
+/* Get rid of default styling */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 /* Navbar */
 .navbar {
     text-align: center;
+	background-color: white;
+	padding: 25px;
 }
 .navbar a {
     font-size: 20px;
@@ -9,42 +21,37 @@
     padding: 20px;
 }
 .navbar a:hover {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid blue;
 }
 
 /* Header Portion */
 .header {
-    text-align: center;
+	/* background-repeat: fixed 100%; */
+	background-color: #22262971;
+	max-height: fit-content;
 }
+.header h1 {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	text-align: center;
+	font-size: 500%;
+	color: white;
 
-html{
-	height: 100%;
 }
-body{
-	background-color: #222629;
-	height: 100%;
-}
+/* Orditing animation */
 .moon{
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
+	position: relative;
+	bottom: 280px;
+	/* margin: auto; */
+	margin-left: auto;
+	margin-right: auto;
 	background-color: #31708e;
 	border-radius: 50%;
 	width: 195px;
 	height: 195px;
-}
-.moon img {
-    width: 205px;
-    height: 205px;
-    position: absolute;
-    right: -5px;
-    bottom: -5px;
-
+	z-index: -1;
 }
 @-webkit-keyframes orbit{
 	from{
@@ -95,4 +102,10 @@ body{
 .moon.behind:after{
 	-webkit-backface-visibility: visible;
 	backface-visibility: visible;
+}
+
+
+/* About me */
+.about_me {
+	background-color: white;
 }
