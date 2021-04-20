@@ -14,7 +14,7 @@
         <a href="#about_me">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="">Contact</a>
+        <a href="#contact">Contact</a>
     </div>
 
     <section class="header">
@@ -112,12 +112,30 @@
             <img src="images/flask.png">
             <img src="images/docker.png">
         </div>
-    </div>
 
-    <div>
-        
+        <div class="contact_me" id="contact">
+            <h1>Lets Get in Touch</h1>
+                <form class="validator_form">
+                    <div>
+                        <label for="Name"><i class="far fa-user"></i></label>
+                        <input type="text" placeholder="Name" name="Name">
+                    </div>
+                    <div>
+                        <label for="Email"><i class="far fa-envelope"></i></label>
+                        <input type="text" placeholder="Email" name="Email">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Subject" name="Subject">
+                    </div>
+                    <div>
+                        <textarea id="message" name="Message" placeholder="Your Message..." style="height:200px"></textarea>
+                    </div>
+                    <div class="button">
+                        <button class="submit_button" type="submit" value="Submit">Send Email</button>
+                    </div>
+                </form>
+        </div>
     </div>
-
 </body>
 
 </html>

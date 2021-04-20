@@ -49,6 +49,7 @@ body{
 .everything {
 	background-color: white;
 	padding: 20px;
+	height: fit-content;
 }
 
 /* About Me */
@@ -167,4 +168,44 @@ body{
 	width: 150px;
 	height: 150px;
 	padding: 30px;
+}
+
+
+/* Contact Me */
+.contact_me {
+	/* text-align: center; */
+	/* width: 500px; */
+	/* margin-right: auto;
+	margin-left: auto; */
+    background: 0 0;
+    padding: 30px 0 80px;
+}
+.contact_me h1 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.validator_form {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #b6b6b6;
+	padding: 20px;
+}
+input[type=text], textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+.button {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.submit_button {
+	padding: 10px;
 }
