@@ -18,3 +18,17 @@ var form = document.getElementById("my-form");
       });
     }
     form.addEventListener("submit", handleSubmit)
+
+// var message = " ";
+
+// $("#form-button").on("click", function() {
+//     message = $("#my-form").serialize();
+//     $.ajax({
+//         url: "https://formspree.io/f/xwkapwny",
+//         method: "POST",
+//         data: {message: message},
+//         dataType: "json"
+//     });
+//     alert('Thanks for the email, we\'ll be in touch promptly.');
+//     return false;
+// });
