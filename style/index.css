@@ -202,6 +202,13 @@ input[type=text], textarea {
 }
 .name-email {
 	width: 90%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
 .fa-user {
 	font-size: 20px;
@@ -209,7 +216,7 @@ input[type=text], textarea {
 }
 .fa-envelope {
 	font-size: 20px;
-	padding: 13px;
+	padding: 11px;
 }
 .button {
 	margin-left: auto;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/moon-stars.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="scripts/form-submit.js"></script>
     <title>Bergan Oudshoorn</title>
 </head>
 <body>
@@ -115,24 +116,21 @@
 
         <div class="contact_me" id="contact">
             <h1>Lets Get in Touch</h1>
-                <form class="validator_form" action="MAILTO:bergan00@gmail.com" method="POST" enctype="text/plain">
-                    <div>
+                <form id="my-form" class="validator_form" action="https://formspree.io/f/xwkapwny" method="POST" >
                         <label for="Name"><i class="far fa-user"></i></label>
-                        <input class="name-email" type="text" placeholder="Name" name="Name">
-                    </div>
-                    <div>
+                        <input class="name-email" type="text" placeholder="Name" name="Name" required>
+
                         <label for="Email"><i class="far fa-envelope"></i></label>
-                        <input class="name-email" type="text" placeholder="Email" name="Email">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Subject" name="Subject" class="other-inputs">
-                    </div>
-                    <div>
-                        <textarea id="message" name="Message" placeholder="Your Message..." style="height:200px" class="other-inputs"></textarea>
-                    </div>
+                        <input class="name-email" type="email" placeholder="Email" name="Email" required>
+
+                        <input type="text" placeholder="Subject" name="Subject" class="other-inputs" required>
+
+                        <textarea id="message" name="Message" placeholder="Your Message..." style="height:200px" class="other-inputs" required></textarea>
+
                     <div class="button">
-                        <button class="submit_button" type="submit" value="Submit">Send Email</button>
+                        <button id="form-button" class="submit_button" type="submit" value="submit">Send Email</button>
                     </div>
+                    <p id="my-form-status"></p>
                 </form>
         </div>
     </div>
