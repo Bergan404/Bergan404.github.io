@@ -1,7 +1,27 @@
+/* Color Pallet */
+:root {
+	--white: #ffffff;
+}
+
+/* Default body styling */
 body{
 	height: 100%;
 	background-color: #222629;
 }
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+	width: 0.25rem;
+  }
+
+  body::-webkit-scrollbar-track {
+	background: #1e1e24;
+  }
+
+  body::-webkit-scrollbar-thumb {
+	background: white;
+  }
+
 /* Get rid of default styling */
 * {
 	margin: 0;
