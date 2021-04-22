@@ -28,7 +28,7 @@ body{
 /* Header Portion */
 .header {
 	background-color: #22262971;
-	height: 400px;
+	height: 370px;
 }
 .header h1 {
 	text-align: center;
@@ -39,10 +39,10 @@ body{
 }
 .header h3 {
 	text-align: center;
-	font-size: 200%;
+	font-size: 150%;
 	color: white;
 	position: relative;
-	top: 4em;
+	top: 5.5em;
 }
 
 /* Container for everything */
@@ -117,14 +117,33 @@ body{
 
 
 /* Projects */
-.projects h1 {
+.projects-container {
+
+}
+.projects-header {
+	position: relative;
 	text-align: center;
-	margin-bottom: 20px;
+}
+.projects-h2 {
+	font-size: 2em;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+}
+.projects-header::after {
+	background: black;
+    content: '';
+    display: inline-block;
+    height: 0.2em;
+    max-width: 10em;
+    width: 50%;
+	box-sizing: inherit;
 }
 .sites_container {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 10px;
@@ -173,7 +192,7 @@ body{
     content: '';
     display: inline-block;
     height: 0.2em;
-    max-width: 20em;
+    max-width: 10em;
     width: 50%;
 	box-sizing: inherit;
 }
@@ -195,21 +214,33 @@ body{
 
 /* Contact Me */
 .contact_me {
-	/* text-align: center; */
-	/* width: 500px; */
-	/* margin-right: auto;
-	margin-left: auto; */
     background: 0 0;
     padding: 30px 0 80px;
 }
-.contact_me h1 {
-	margin-bottom: 20px;
+.contact-header {
+	position: relative;
 	text-align: center;
+}
+.contact-h2 {
+	font-size: 2em;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+}
+.contact-header::after {
+	background: black;
+    content: '';
+    display: inline-block;
+    height: 0.2em;
+    max-width: 20em;
+    width: 50%;
+	box-sizing: inherit;
 }
 .validator_form {
 	width: 500px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
 	background-color: #b6b6b6;
 	padding: 20px;
 }
