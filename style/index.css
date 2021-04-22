@@ -1,25 +1,32 @@
-/* Color Pallet */
+/* Color Palette */
 :root {
-	--white: #ffffff;
+	--darkgray: #474b4f;
+	--gray: #6b6e70;
+	--lightgray: #f3f2f2;
+	--lightblue: #5ab9ea;
+	--blue: #5680e9;
 }
 
 /* Default body styling */
 body{
 	height: 100%;
 	background-color: #222629;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* SCROLLBAR */
 body::-webkit-scrollbar {
-	width: 0.25rem;
+	width: 0.30rem;
   }
 
   body::-webkit-scrollbar-track {
-	background: #1e1e24;
+	background: #222629;
   }
 
   body::-webkit-scrollbar-thumb {
 	background: white;
+	border: 1px solid var(--gray);
+	border-radius: 10px;
   }
 
 /* Get rid of default styling */
@@ -32,7 +39,7 @@ body::-webkit-scrollbar {
 /* Navbar */
 .navbar {
     text-align: center;
-	background-color: white;
+	background-color: var(--lightgray);
 	padding: 25px;
 }
 .navbar a {
@@ -42,7 +49,7 @@ body::-webkit-scrollbar {
     padding: 20px;
 }
 .navbar a:hover {
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid var(--blue);
 }
 
 /* Header Portion */
@@ -67,7 +74,7 @@ body::-webkit-scrollbar {
 
 /* Container for everything */
 .everything {
-	background-color: white;
+	background-color: var(--lightgray);
 	padding: 20px;
 	height: fit-content;
 }
@@ -137,9 +144,6 @@ body::-webkit-scrollbar {
 
 
 /* Projects */
-.projects-container {
-
-}
 .projects-header {
 	position: relative;
 	text-align: center;
@@ -154,7 +158,7 @@ body::-webkit-scrollbar {
     content: '';
     display: inline-block;
     height: 0.2em;
-    max-width: 10em;
+    max-width: 15em;
     width: 50%;
 	box-sizing: inherit;
 }
@@ -212,7 +216,7 @@ body::-webkit-scrollbar {
     content: '';
     display: inline-block;
     height: 0.2em;
-    max-width: 10em;
+    max-width: 12em;
     width: 50%;
 	box-sizing: inherit;
 }
@@ -251,7 +255,7 @@ body::-webkit-scrollbar {
     content: '';
     display: inline-block;
     height: 0.2em;
-    max-width: 20em;
+    max-width: 25em;
     width: 50%;
 	box-sizing: inherit;
 }
