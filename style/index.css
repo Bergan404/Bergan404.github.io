@@ -36,13 +36,14 @@ body::-webkit-scrollbar {
 	border: 0;
 }
 
+/* Page Loader */
 .loader-wrapper {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #242f3f;
+	background-color: var(--darkgray);
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -325,4 +326,8 @@ input[type=text], textarea {
 }
 .submit_button {
 	padding: 10px;
+}
+#my-form-status {
+	text-align: center;
+	margin-top: 20px;
 }

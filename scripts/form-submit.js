@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', event => {
           'Accept': 'application/json'
       }
     }).then(response => {
-      status.innerHTML = "Thanks for your submission!";
+      status.innerHTML = "Thanks for your message!";
       form.reset()
     }).catch(error => {
       status.innerHTML = "Oops! There was a problem submitting your form"
@@ -22,4 +22,3 @@ document.addEventListener('DOMContentLoaded', event => {
   form.addEventListener("submit", handleSubmit)
 
 })
-
