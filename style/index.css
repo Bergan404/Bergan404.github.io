@@ -12,7 +12,20 @@ body{
 	height: 100%;
 	background-color: #222629;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		}
+}
+
 
 /* SCROLLBAR */
 body::-webkit-scrollbar {
