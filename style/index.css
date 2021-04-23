@@ -31,17 +31,17 @@ body{
 /* SCROLLBAR */
 body::-webkit-scrollbar {
 	width: 0.30rem;
-  }
+}
 
-  body::-webkit-scrollbar-track {
-	background: #222629;
-  }
+body::-webkit-scrollbar-track {
+background: #222629;
+}
 
-  body::-webkit-scrollbar-thumb {
-	background: white;
-	border: 1px solid var(--gray);
-	border-radius: 10px;
-  }
+body::-webkit-scrollbar-thumb {
+background: white;
+border: 1px solid var(--gray);
+border-radius: 10px;
+}
 
 /* Get rid of default styling */
 * {
@@ -142,6 +142,23 @@ li {
 	color: white;
 	position: relative;
 	top: 5.5em;
+}
+.descriptive-text {
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 30vh;
+	animation: fadeInAnimation2 ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation2 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		}
 }
 
 /* Container for everything */
