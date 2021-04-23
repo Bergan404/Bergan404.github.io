@@ -34,23 +34,6 @@ body{
 		}
 }
 
-
-/* SCROLLBAR */
-body::-webkit-scrollbar {
-	width: 0.30rem;
-}
-
-body::-webkit-scrollbar-track {
-background: #222629;
-}
-
-body::-webkit-scrollbar-thumb {
-background: white;
-border: 1px solid var(--gray);
-border-radius: 10px;
-}
-
-
 /* Navbar */
 .navbar {
     text-align: center;
@@ -205,11 +188,11 @@ li {
 }
 .fa-github {
 	font-size: 30px;
-	color: blue;
+	color: var(--blue);
 }
 .fa-linkedin-in {
 	font-size: 30px;
-	color: blue;
+	color: var(--blue);
 }
 
 
@@ -379,4 +362,11 @@ input[type=text], textarea {
 #my-form-status {
 	text-align: center;
 	margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+	text-align: center;
+	color: white;
+	padding: 20px;
 }
