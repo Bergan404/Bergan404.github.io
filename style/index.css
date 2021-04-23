@@ -127,7 +127,7 @@ li {
 /* Header Portion */
 .header {
 	background-color: #22262971;
-	height: 370px;
+	height: 100vh;
 }
 .header h1 {
 	text-align: center;

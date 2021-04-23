@@ -64,7 +64,7 @@
 }
 .stars {
 	overflow: hidden;
-	height: 400px;
+	height: 100vh;
 	position: relative;
 	bottom: 300px;
 }
