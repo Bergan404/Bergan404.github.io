@@ -236,22 +236,23 @@ li {
 }
 .project-showcase i {
 	margin-bottom: 20px;
+	padding: 30px;
 	border: 1px solid black;
-	padding: 20px;
+	box-shadow: 5px 5px #6b6e7057;
 }
 .project-showcase p {
 	font-size: 17px;
 	line-height: 25px;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .project-showcase a {
 	text-decoration: none;
-	color: black;
 	padding: 5px;
 	border-radius: 24px;
 }
 .github {
+	margin-top: 20px;
 	text-decoration: none;
 	color: black;
 	padding: 5px;
@@ -261,6 +262,8 @@ li {
 }
 .fa-music, .fa-gamepad, .fa-microchip {
 	font-size: 110px;
+	color: var(--lightblue);
+
 }
 
 
