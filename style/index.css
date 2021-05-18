@@ -260,7 +260,7 @@ li {
 	border: 1px solid black;
 
 }
-.fa-music, .fa-gamepad, .fa-microchip {
+.fa-music, .fa-gamepad, .fa-microchip, .fa-comments {
 	font-size: 110px;
 	color: var(--lightblue);
 
