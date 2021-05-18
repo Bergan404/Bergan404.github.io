@@ -239,6 +239,7 @@ li {
 	padding: 30px;
 	border: 1px solid black;
 	box-shadow: 5px 5px #6b6e7057;
+	background-color: var(--gray);
 }
 .project-showcase p {
 	font-size: 17px;
@@ -262,7 +263,12 @@ li {
 }
 .fa-music, .fa-gamepad, .fa-microchip, .fa-comments {
 	font-size: 110px;
-	color: var(--lightblue);
+	color: white;
+
+}
+.goodgames, .circuitbytes, .echo, .bmw {
+	max-width: 110px;
+	max-height: 110px;
 
 }
 
