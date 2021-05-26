@@ -396,10 +396,12 @@ li {
 	margin-left: auto;
 	margin-top: 2.5em;
 	margin-bottom: 2.5em;
-	background-color: #b6b6b6;
+	background-color: #222629;
+	border-radius: 20px;
 	padding: 20px;
 }
 input[type=text], textarea {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	padding: 12px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -428,18 +430,27 @@ input[type=text], textarea {
 .fa-envelope {
 	font-size: 20px;
 	padding: 11px;
+	margin-right: 2px;
 }
 .button {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	margin-top: 10px;
 }
 .submit_button {
 	padding: 10px;
+	border-radius: 20px;
+	font-weight: 200;
+	transition: background-color .3s ease-in-out;
+}
+.submit_button:hover {
+	background-color: var(--blue);
+	cursor: pointer;
 }
 #my-form-status {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 /* Footer */
