@@ -98,8 +98,7 @@ li {
 .header h1 {
 	text-align: center;
 	font-size: 400%;
-	/* color: white; */
-	color: red;
+	color: white;
 	position: relative;
 	top: 2em;
 }
