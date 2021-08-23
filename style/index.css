@@ -134,20 +134,22 @@ li {
 	height: fit-content;
 	color: white;
 	margin-top: 28px;
+	/* width: 100%; */
 	/* z-index: -1; */
 }
 
 /* About Me */
-.about_me {
+/* .about_me {
 	display: flex;
-	justify-content: space-between;
-	width: 1000px;
+	justify-content: space-around; */
+	/* width: 1000px; */
+	/* width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
-}
-/* Description about me */
+} */
+/* Description about me
 .me {
 	vertical-align: baseline;
 }
@@ -159,8 +161,8 @@ li {
 	font-size: 17px;
 	line-height: 28px;
 	width: 382px;
-}
-/* Picture */
+} */
+/* Picture
 .picture {
 	-ms-flex-align: center;
 }
@@ -169,8 +171,8 @@ li {
 	height: 250px;
 	box-shadow: 5px 5px #6b6e7048;
 
-}
-/* Person info */
+} */
+/* Personal info
 .personal_info h2 {
 	margin-bottom: 20px;
 }
@@ -202,7 +204,7 @@ li {
 .fa-linkedin-in {
 	font-size: 30px;
 	color: var(--blue);
-}
+} */
 
 
 /* Projects */
