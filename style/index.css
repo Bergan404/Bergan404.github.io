@@ -56,13 +56,13 @@ li {
 	position: relative;
 	display: inline-block;
 }
-.nav-wrapper a {
+/* .nav-wrapper a {
     font-size: 20px;
     text-decoration: none;
     color: white;
     padding: 20px;
 	text-transform: uppercase;
-}
+} */
 .nav-wrapper a::before,
 .nav-wrapper a::after {
 	content: "";

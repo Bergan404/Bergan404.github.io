@@ -1,27 +1,24 @@
 /* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-
+  and (min-width: 400px) {
+    .nav-wrapper a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        text-transform: uppercase;
+    }
 }
 
-/* Portrait */
+/* Laptop and Desktop */
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-
+  and (max-width: 375px) {
+    .nav-wrapper a {
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        text-transform: uppercase;
+    }
 }
