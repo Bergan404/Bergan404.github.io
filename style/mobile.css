@@ -254,6 +254,7 @@
         border-radius: 20px;
         font-weight: 200;
         transition: background-color .3s ease-in-out;
+        background-color:white;
     }
     .submit_button:hover {
         background-color: var(--blue);
@@ -537,6 +538,7 @@
         border-radius: 20px;
         font-weight: 200;
         transition: background-color .3s ease-in-out;
+        background-color:white;
     }
     .submit_button:hover {
         background-color: var(--blue);
