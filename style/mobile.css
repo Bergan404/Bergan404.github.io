@@ -9,6 +9,30 @@
         bottom: 300px;
     }
 
+    .header h1 {
+        text-align: center;
+        font-size: 400%;
+        color: white;
+        position: relative;
+        top: 2em;
+    }
+    .header h3 {
+        text-align: center;
+        font-size: 150%;
+        color: white;
+        position: relative;
+        top: 5.5em;
+    }
+    .descriptive-text {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 30vh;
+        animation: fadeInAnimation2 ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
 
     nav {
         position: relative;
@@ -255,6 +279,33 @@
     html, body {
         min-width: 320px;
     }
+
+    .header h1 {
+        text-align: center;
+        font-size: 300%;
+        color: white;
+        position: relative;
+        top: 3em;
+    }
+    .header h3 {
+        text-align: center;
+        font-size: 150%;
+        color: white;
+        position: relative;
+        top: 6.5em;
+    }
+    .descriptive-text {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 30vh;
+        animation: fadeInAnimation2 ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        font-size: 20px;
+    }
+
+
     .nav-wrapper a {
         font-size: 13.5px;
         text-decoration: none;

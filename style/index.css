@@ -95,21 +95,21 @@ li {
 	background-color: #22262971;
 	height: 100vh;
 }
-.header h1 {
+/* .header h1 {
 	text-align: center;
 	font-size: 400%;
 	color: white;
 	position: relative;
 	top: 2em;
-}
-.header h3 {
+} */
+/* .header h3 {
 	text-align: center;
 	font-size: 150%;
 	color: white;
 	position: relative;
 	top: 5.5em;
-}
-.descriptive-text {
+} */
+/* .descriptive-text {
 	color: white;
 	text-align: center;
 	position: relative;
@@ -117,7 +117,7 @@ li {
 	animation: fadeInAnimation2 ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
+} */
 @keyframes fadeInAnimation2 {
 	0% {
 		opacity: 0;
