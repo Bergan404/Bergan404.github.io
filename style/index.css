@@ -40,7 +40,8 @@ body{
     text-align: center;
 	background-color: var(--something);
 	padding: 30px 0 30px 0;
-	width: 100%;
+	/* width: 100%; */
+	min-width: 100vh;
 }
 nav {
 	position: relative;
