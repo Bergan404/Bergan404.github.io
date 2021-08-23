@@ -105,6 +105,132 @@
         width: 500px;
         text-align: center;
     }
+
+    /* Skills */
+    .skills-container {
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .skills-header {
+        position: relative;
+        text-align: center;
+    }
+    .skills-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+    .skills-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 12em;
+        width: 50%;
+        box-sizing: inherit;
+    }
+    .skills-icons {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+    .skills-icons i {
+        margin: 50px;
+        font-size: 100px;
+    }
+
+    /* Contact Me */
+    .contact_me {
+        background: 0 0;
+        padding: 30px 0 80px;
+    }
+    .contact-header {
+        position: relative;
+        text-align: center;
+    }
+    .contact-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+    .contact-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 25em;
+        width: 50%;
+        box-sizing: inherit;
+    }
+    .validator_form {
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        background-color: #222629;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    input[type=text], textarea {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    .other-inputs {
+        width: 100%;
+    }
+    .name-email {
+        width: 90%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    .fa-user {
+        font-size: 20px;
+        padding: 13px;
+    }
+    .fa-envelope {
+        font-size: 20px;
+        padding: 11px;
+        margin-right: 2px;
+    }
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .submit_button {
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 200;
+        transition: background-color .3s ease-in-out;
+    }
+    .submit_button:hover {
+        background-color: var(--blue);
+        cursor: pointer;
+    }
+    #my-form-status {
+        text-align: center;
+        margin-top: 10px;
+    }
 }
 
 /* Iphone X */
@@ -225,5 +351,132 @@
         margin: 40px 10px;
         /* width: 500px; */
         text-align: center;
+    }
+
+    /* Skills */
+    .skills-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .skills-header {
+        position: relative;
+        text-align: center;
+    }
+    .skills-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+    .skills-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 12em;
+        width: 50%;
+        box-sizing: inherit;
+    }
+    .skills-icons {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+    .skills-icons i {
+        margin: 50px;
+        font-size: 65px;
+    }
+
+    /* Contact Me */
+    .contact_me {
+        background: 0 0;
+        padding: 30px 0 80px;
+    }
+    .contact-header {
+        position: relative;
+        text-align: center;
+    }
+    .contact-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+    .contact-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 25em;
+        width: 50%;
+        box-sizing: inherit;
+    }
+    .validator_form {
+        /* width: 100%; */
+        /* margin-right: auto;
+        margin-left: auto; */
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        background-color: #222629;
+        border-radius: 20px;
+        padding: 15px;
+    }
+    input[type=text], textarea {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        width: 83%;
+    }
+    .other-inputs {
+        width: 100%;
+    }
+    .name-email {
+        width: 83%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    .fa-user {
+        font-size: 20px;
+        padding: 13px;
+    }
+    .fa-envelope {
+        font-size: 20px;
+        padding: 11px;
+        margin-right: 2px;
+    }
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .submit_button {
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 200;
+        transition: background-color .3s ease-in-out;
+    }
+    .submit_button:hover {
+        background-color: var(--blue);
+        cursor: pointer;
+    }
+    #my-form-status {
+        text-align: center;
+        margin-top: 10px;
     }
 }

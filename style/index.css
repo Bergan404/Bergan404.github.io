@@ -329,7 +329,7 @@ li {
 }
 
 
-/* Skills */
+/* Skills
 .skills-container {
 	width: 1100px;
 	margin-left: auto;
@@ -367,10 +367,10 @@ li {
 .skills-icons i {
 	margin: 50px;
 	font-size: 100px;
-}
+} */
 
 
-/* Contact Me */
+/* Contact Me
 .contact_me {
     background: 0 0;
     padding: 30px 0 80px;
@@ -454,7 +454,7 @@ input[type=text], textarea {
 #my-form-status {
 	text-align: center;
 	margin-top: 10px;
-}
+} */
 
 /* Footer */
 .footer {
