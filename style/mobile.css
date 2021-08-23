@@ -89,6 +89,22 @@
         color: var(--blue);
     }
 
+    /* sites */
+    .sites_container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    .project-showcase {
+        margin: 10px 49px;
+        width: 500px;
+        text-align: center;
+    }
 }
 
 /* Iphone X */
@@ -98,7 +114,7 @@
         min-width: 320px;
     }
     .nav-wrapper a {
-        font-size: 13px;
+        font-size: 13.5px;
         text-decoration: none;
         color: white;
         /* padding: 10px; */
@@ -194,4 +210,20 @@
         color: var(--blue);
     }
 
+    /* sites */
+    .sites_container {
+        width: 100%;
+        /* margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px; */
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+    }
+    .project-showcase {
+        margin: 40px 10px;
+        /* width: 500px; */
+        text-align: center;
+    }
 }

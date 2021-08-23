@@ -226,7 +226,7 @@ li {
     width: 50%;
 	box-sizing: inherit;
 }
-.sites_container {
+/* .sites_container {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -235,16 +235,16 @@ li {
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 10px;
-}
+} */
 .sites_container img {
 	width: 500px;
 	height: 300px;
 }
-.project-showcase {
+/* .project-showcase {
 	margin: 10px 49px;
 	width: 500px;
 	text-align: center;
-}
+} */
 .image_site {
 	margin-left: auto;
 	margin-right: auto;
