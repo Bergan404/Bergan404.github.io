@@ -2,6 +2,19 @@
 
 @media only screen
   and (min-width: 400px) {
+    nav {
+        position: relative;
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    li {
+        margin: 0 30px;
+        position: relative;
+        display: inline-block;
+    }
     .nav-wrapper a {
         font-size: 20px;
         text-decoration: none;
@@ -11,14 +24,27 @@
     }
 }
 
-/* Laptop and Desktop */
+/* Iphone X */
 @media only screen
-  and (max-width: 375px) {
+  and (max-width: 376px) {
     .nav-wrapper a {
-        font-size: 10px;
+        font-size: 13px;
         text-decoration: none;
         color: white;
-        padding: 20px;
+        /* padding: 10px; */
         text-transform: uppercase;
+    }
+    nav {
+        /* position: relative; */
+        /* text-align: center; */
+    }
+    ul {
+        list-style-type: none;
+        /* text-align: center; */
+        display: flex;
+    }
+    li {
+        margin: 0 7px;
+        /* position: relative; */
     }
 }
