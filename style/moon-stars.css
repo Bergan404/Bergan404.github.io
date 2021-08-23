@@ -62,12 +62,12 @@
 	-webkit-backface-visibility: visible;
 	backface-visibility: visible;
 }
-.stars {
+/* .stars {
 	overflow: hidden;
 	height: 100vh;
 	position: relative;
 	bottom: 300px;
-}
+} */
 #stars {
 	content:"e";
 	background: transparent;

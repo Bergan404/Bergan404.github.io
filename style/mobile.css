@@ -2,6 +2,14 @@
 
 @media only screen
   and (min-width: 736px) {
+    .stars {
+        overflow: hidden;
+        height: 100vh;
+        position: relative;
+        bottom: 300px;
+    }
+
+
     nav {
         position: relative;
         text-align: center;
@@ -236,6 +244,14 @@
 /* Iphone X */
 @media only screen
   and (max-width: 480px) {
+    .stars {
+        overflow: hidden;
+        height: 100vh;
+        position: relative;
+        bottom: 409px;
+    }
+
+
     html, body {
         min-width: 320px;
     }
