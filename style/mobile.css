@@ -298,7 +298,7 @@
         color: white;
         text-align: center;
         position: relative;
-        top: 30vh;
+        top: 25vh;
         animation: fadeInAnimation2 ease 5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
