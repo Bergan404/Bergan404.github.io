@@ -66,6 +66,33 @@
         padding: 20px;
         text-transform: uppercase;
     }
+    .nav-wrapper a::before,
+    .nav-wrapper a::after {
+        content: "";
+        height: 2px;
+        width: 0;
+        opacity: 0;
+        background-color: var(--blue);
+        position: absolute;
+        transition: all .5s;
+    }
+
+    .nav-wrapper a::before {
+        top: -3px;
+    }
+
+    .nav-wrapper a:after {
+        bottom: -3px;
+        right: 0;
+    }
+
+    .nav-wrapper a:hover::before,
+    .nav-wrapper a:hover::after {
+        width: calc(100% + 20px);
+        opacity: 0.7;
+    }
+
+
     .about_me {
         display: flex;
         justify-content: space-around;
@@ -327,6 +354,8 @@
         color: white;
         font-size:2em;
         text-align: center;
+        margin-right: auto;
+        margin-left: auto;
     }
     #nav.js {
         display: none;
@@ -352,10 +381,10 @@
     ul {
         list-style-type: none;
         /* text-align: center; */
-        display: flex;
+        /* display: flex; */
     }
     li {
-        margin: 0 6px;
+        margin: 5px 6px;
         /* position: relative; */
     }
 
