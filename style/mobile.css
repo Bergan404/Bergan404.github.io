@@ -356,11 +356,9 @@
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-        transition: all 0.5s;
     }
     #nav.js {
         display: none;
-        transition: all 0.5s;
     }
     }
     .navbar {
