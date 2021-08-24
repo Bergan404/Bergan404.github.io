@@ -47,9 +47,6 @@
     #menu {
         display: none;
     }
-    /* nav select {
-        display: none;
-    } */
     ul {
         list-style-type: none;
         text-align: center;
@@ -346,7 +343,7 @@
         font-size: 20px;
     }
 
-/* When In mobile view there will be 3 lines that create a dropdown */
+    /* When In mobile view there will be 3 lines that create a dropdown */
     #menu {
         width:1.4em;
         display: block;
@@ -360,7 +357,7 @@
     #nav.js {
         display: none;
     }
-    }
+    
     .navbar {
         text-align: center;
         background-color: var(--something);
