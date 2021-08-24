@@ -356,9 +356,12 @@
         text-align: center;
         margin-right: auto;
         margin-left: auto;
+        transition: all 0.5s;
     }
     #nav.js {
         display: none;
+        transition: all 0.5s;
+    }
     }
     .navbar {
         text-align: center;
@@ -399,6 +402,7 @@
         padding-top: 30px;
         padding-bottom: 30px; */
     }
+
     /* Description about me */
     .me {
         vertical-align: baseline;

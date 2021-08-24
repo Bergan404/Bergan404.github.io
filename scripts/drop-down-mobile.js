@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', event => {
     $("#nav").addClass("js").before('<div id="menu">☰</div>');
 
     $("#menu").click(function(){
-        $("#nav").toggle();
+        $("#nav").slideToggle(1000, "linear");
+        $(this).toggleClass("open");
     });
 
     $(window).resize(function(){
