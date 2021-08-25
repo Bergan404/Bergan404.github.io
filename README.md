@@ -1,2 +1,2 @@
 # My Protfolio
-The start to something good
+Welcome to me Bergan Oudshoorn!
