@@ -117,6 +117,8 @@ li {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 } */
+
+/* Keyframe fade in animation for the header text */
 @keyframes fadeInAnimation2 {
 	0% {
 		opacity: 0;
