@@ -1,6 +1,6 @@
 /* For Destop and laptop view */
 @media only screen
-  and (min-width: 601px) {
+  and (min-width: 851px) {
 
     .stars {
         overflow: hidden;
@@ -318,7 +318,7 @@
 
 /* Iphone X */
 @media only screen
-  and (max-width: 600px) {
+  and (max-width: 850px) {
     .stars {
         overflow: hidden;
         height: 100vh;
