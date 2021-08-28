@@ -1,6 +1,7 @@
 /* For Destop and laptop view */
 @media only screen
-  and (min-width: 481px) {
+  and (min-width: 601px) {
+
     .stars {
         overflow: hidden;
         height: 100vh;
@@ -37,7 +38,8 @@
         text-align: center;
         background-color: var(--something);
         padding: 30px 0 30px 0;
-        width: 100%;
+        /* width: 100%; */
+        /* width: 100vw; */
     }
     nav {
         position: relative;
@@ -165,7 +167,9 @@
 
     /* Projects */
     .sites_container {
-        width: 1200px;
+        /* width: 1200px; */
+        /* width: 100vw; */
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 2.5em;
@@ -176,14 +180,16 @@
     }
     .project-showcase {
         margin: 10px 49px;
-        width: 500px;
+        /* width: 500px; */
         text-align: center;
     }
 
 
     /* Skills */
     .skills-container {
-        width: 1100px;
+        /* width: 1100px; */
+        /* width: 100vw;x */
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
 
@@ -312,7 +318,7 @@
 
 /* Iphone X */
 @media only screen
-  and (max-width: 480px) {
+  and (max-width: 600px) {
     .stars {
         overflow: hidden;
         height: 100vh;
