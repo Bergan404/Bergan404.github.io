@@ -257,7 +257,8 @@ li {
 	text-decoration: none;
 	text-align: center;
 	border-radius: 20px;
-	border: 3px solid var(--blue);
+	/* border: 3px solid var(--blue); */
+	border: 3px solid rgba(252,70,107,.5);
 	font-size: 20px;
 	font-family: arial;
 	position: relative;
@@ -274,7 +275,8 @@ li {
   height: 100%;
   top: -100%;
   left: 0;
-  background: var(--blue);
+  /* background: var(--blue); */
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 150%);
   z-index: 0;
   transition: all .35s;
 }
