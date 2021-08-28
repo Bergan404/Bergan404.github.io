@@ -1,6 +1,6 @@
 /* For Destop and laptop view */
 @media only screen
-  and (min-width: 736px) {
+  and (min-width: 481px) {
     .stars {
         overflow: hidden;
         height: 100vh;
