@@ -30,11 +30,24 @@
     opacity: 1;
 }
 .spotlight.style5 .content {
-    border-color: rgb(130, 42, 130);
+    border-color: var(--blue);
 }
 .spotlight.left .content {
     border-right-width: 0.35em;
     left: 0;
+}
+.spotlight.left .content, .spotlight.right .content {
+    height: 101%;
+    padding: 6em 3em;
+    top: 0;
+    width: 28em;
+}
+.spotlight.right .content {
+    border-left-width: 0.35em;
+    right: 0;
+}
+.spotlight.style4 .content {
+    border-color: var(--blue);
 }
 .spotlight.left .content, .spotlight.right .content {
     height: 101%;
@@ -85,10 +98,15 @@ header h2 + p {
     font-size: 2em;
 }
 header p {
-    color: #ffffff;
+    /* color: #ffffff; */
     position: relative;
     margin: 0 0 1.5em 0;
     font-size: 2em;
+}
+.project-paragraph {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(171, 171, 171);
 }
 ul.actions {
     display: -moz-flex;
@@ -110,8 +128,38 @@ ul.actions {
     text-align: center;
     padding-bottom: 20px;
 }
-.button.live {
+.live {
     background-color: #1b67ff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    color: #ffffff ;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 3em;
+    line-height: 3em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.live:hover {
+    box-shadow: inset 0 0 0 1px var(--blue);
+    color: var(--blue);
 }
 .button {
     -moz-appearance: none;
@@ -130,7 +178,7 @@ ul.actions {
     border-radius: 4px;
     border: 0;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-    color: #ffffff !important;
+    color: #ffffff ;
     cursor: pointer;
     display: inline-block;
     font-weight: 300;
@@ -140,4 +188,8 @@ ul.actions {
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
+}
+.button:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.835);
+    color: rgba(255, 0, 0, 0.835);
 }
