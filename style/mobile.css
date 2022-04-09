@@ -1,6 +1,5 @@
 /* For Destop and laptop view */
-@media only screen
-  and (min-width: 851px) {
+@media only screen and (min-width: 851px) {
 
     .stars {
         overflow: hidden;
@@ -16,6 +15,7 @@
         position: relative;
         top: 2em;
     }
+
     .header h3 {
         text-align: center;
         font-size: 150%;
@@ -23,6 +23,7 @@
         position: relative;
         top: 5.5em;
     }
+
     .descriptive-text {
         color: white;
         text-align: center;
@@ -41,22 +42,27 @@
         /* width: 100%; */
         /* width: 100vw; */
     }
+
     nav {
         position: relative;
         text-align: center;
     }
+
     #menu {
         display: none;
     }
+
     ul {
         list-style-type: none;
         text-align: center;
     }
+
     li {
         margin: 0 30px;
         position: relative;
         display: inline-block;
     }
+
     .nav-wrapper a {
         font-size: 20px;
         text-decoration: none;
@@ -64,6 +70,7 @@
         padding: 20px;
         text-transform: uppercase;
     }
+
     .nav-wrapper a::before,
     .nav-wrapper a::after {
         content: "";
@@ -107,10 +114,12 @@
     .me {
         vertical-align: baseline;
     }
-    .me h2{
+
+    .me h2 {
         text-align: center;
         margin-bottom: 20px;
     }
+
     .me p {
         font-size: 17px;
         line-height: 28px;
@@ -122,6 +131,7 @@
     .picture {
         -ms-flex-align: center;
     }
+
     .picture img {
         width: 250px;
         height: 250px;
@@ -134,6 +144,7 @@
     .personal_info h2 {
         margin-bottom: 20px;
     }
+
     .personal_info h4 {
         border-bottom: 1px solid white;
         font-size: 17px;
@@ -141,10 +152,12 @@
         margin-bottom: 12px;
         padding-bottom: 12px;
     }
+
     .github-link {
         display: flex;
         justify-content: space-around;
     }
+
     .github-link a {
         border: 1px solid #6b6e70;
         border-radius: 50px;
@@ -152,13 +165,16 @@
         box-shadow: 2px 2px #6b6e7057;
         transition: background-color .3s ease-in-out;
     }
+
     .github-link a:hover {
         background-color: var(--darkgray);
     }
+
     .fa-github {
         font-size: 30px;
         color: var(--blue);
     }
+
     .fa-linkedin-in {
         font-size: 30px;
         color: var(--blue);
@@ -178,6 +194,7 @@
         grid-template-columns: auto auto;
         grid-gap: 10px;
     }
+
     .project-showcase {
         margin: 10px 49px;
         /* width: 500px; */
@@ -194,15 +211,18 @@
         margin-right: auto;
 
     }
+
     .skills-header {
         position: relative;
         text-align: center;
     }
+
     .skills-h2 {
         font-size: 2em;
         line-height: 1.5em;
         letter-spacing: -0.025em;
     }
+
     .skills-header::after {
         background: white;
         content: '';
@@ -212,6 +232,7 @@
         width: 50%;
         box-sizing: inherit;
     }
+
     .skills-icons {
         margin-top: 2.5em;
         margin-bottom: 2.5em;
@@ -222,6 +243,7 @@
         box-sizing: border-box;
         align-items: stretch;
     }
+
     .skills-icons i {
         margin: 50px;
         font-size: 100px;
@@ -233,15 +255,18 @@
         background: 0 0;
         padding: 30px 0 80px;
     }
+
     .contact-header {
         position: relative;
         text-align: center;
     }
+
     .contact-h2 {
         font-size: 2em;
         line-height: 1.5em;
         letter-spacing: -0.025em;
     }
+
     .contact-header::after {
         background: white;
         content: '';
@@ -251,6 +276,7 @@
         width: 50%;
         box-sizing: inherit;
     }
+
     .validator_form {
         width: 500px;
         margin-right: auto;
@@ -261,7 +287,9 @@
         border-radius: 20px;
         padding: 20px;
     }
-    input[type=text], textarea {
+
+    input[type=text],
+    textarea {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 12px;
         border: 1px solid #ccc;
@@ -271,9 +299,11 @@
         margin-bottom: 16px;
         resize: vertical;
     }
+
     .other-inputs {
         width: 100%;
     }
+
     .name-email {
         width: 90%;
         padding: 12px;
@@ -284,32 +314,38 @@
         margin-bottom: 16px;
         resize: vertical;
     }
+
     .fa-user {
         font-size: 20px;
         padding: 13px;
     }
+
     .fa-envelope {
         font-size: 20px;
         padding: 11px;
         margin-right: 2px;
     }
+
     .button_contact {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         margin-top: 10px;
     }
+
     .submit_button {
         padding: 10px;
         border-radius: 20px;
         font-weight: 200;
         transition: background-color .3s ease-in-out;
-        background-color:white;
+        background-color: white;
     }
+
     .submit_button:hover {
         background-color: var(--blue);
         cursor: pointer;
     }
+
     #my-form-status {
         text-align: center;
         margin-top: 10px;
@@ -317,8 +353,7 @@
 }
 
 /* Iphone X */
-@media only screen
-  and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
     .stars {
         overflow: hidden;
         height: 100vh;
@@ -327,7 +362,8 @@
     }
 
 
-    html, body {
+    html,
+    body {
         min-width: 320px;
     }
 
@@ -340,6 +376,7 @@
         position: relative;
         top: 3em;
     }
+
     .header h3 {
         text-align: center;
         font-size: 150%;
@@ -362,35 +399,41 @@
 
     /* When In mobile view there will be 3 lines that create a dropdown */
     #menu {
-        width:1.4em;
+        width: 1.4em;
         display: block;
         color: white;
-        font-size:2em;
+        font-size: 2em;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
     }
+
     #nav.js {
         display: none;
     }
+
     .navbar {
         text-align: center;
         background-color: var(--something);
         padding: 20px 0 20px 0;
         width: 100%;
     }
+
     .nav-wrapper a {
         font-size: 13.5px;
         text-decoration: none;
         color: white;
         text-transform: uppercase;
     }
+
     nav {
         display: inline-block;
     }
+
     ul {
         list-style-type: none;
     }
+
     li {
         margin: 5px 6px;
     }
@@ -400,6 +443,7 @@
     .about_me {
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
 
 
@@ -408,10 +452,12 @@
         vertical-align: baseline;
         margin-bottom: 12px;
     }
-    .me h2{
+
+    .me h2 {
         text-align: center;
         margin-bottom: 20px;
     }
+
     .me p {
         font-size: 14px;
         line-height: 28px;
@@ -426,6 +472,7 @@
         margin-right: auto;
         margin-left: auto;
     }
+
     .picture img {
         width: 250px;
         height: 250px;
@@ -439,6 +486,7 @@
         margin-top: 10px;
         text-align: center;
     }
+
     .personal_info h4 {
         border-bottom: 1px solid white;
         font-size: 17px;
@@ -446,10 +494,12 @@
         margin-bottom: 12px;
         padding-bottom: 12px;
     }
+
     .github-link {
         display: flex;
         justify-content: space-around;
     }
+
     .github-link a {
         border: 1px solid #6b6e70;
         border-radius: 50px;
@@ -457,13 +507,16 @@
         box-shadow: 2px 2px #6b6e7057;
         transition: background-color .3s ease-in-out;
     }
+
     .github-link a:hover {
         background-color: var(--darkgray);
     }
+
     .fa-github {
         font-size: 30px;
         color: var(--blue);
     }
+
     .fa-linkedin-in {
         font-size: 30px;
         color: var(--blue);
@@ -476,6 +529,7 @@
         margin-top: 2.5em;
         margin-bottom: 2.5em;
     }
+
     .project-showcase {
         margin: 40px 10px;
         text-align: center;
@@ -489,15 +543,18 @@
         margin-right: auto;
 
     }
+
     .skills-header {
         position: relative;
         text-align: center;
     }
+
     .skills-h2 {
         font-size: 2em;
         line-height: 1.5em;
         letter-spacing: -0.025em;
     }
+
     .skills-header::after {
         background: white;
         content: '';
@@ -507,6 +564,7 @@
         width: 50%;
         box-sizing: inherit;
     }
+
     .skills-icons {
         margin-top: 2.5em;
         margin-bottom: 2.5em;
@@ -517,6 +575,7 @@
         box-sizing: border-box;
         align-items: stretch;
     }
+
     .skills-icons i {
         margin: 50px;
         font-size: 65px;
@@ -524,19 +583,26 @@
 
 
     /* Contact Me */
+    #contact {
+        padding: 20px;
+    }
+
     .contact_me {
         background: 0 0;
         padding: 30px 0 80px;
     }
+
     .contact-header {
         position: relative;
         text-align: center;
     }
+
     .contact-h2 {
         font-size: 2em;
         line-height: 1.5em;
         letter-spacing: -0.025em;
     }
+
     .contact-header::after {
         background: white;
         content: '';
@@ -546,6 +612,7 @@
         width: 100%;
         box-sizing: inherit;
     }
+
     .validator_form {
         margin-top: 2.5em;
         margin-bottom: 2.5em;
@@ -553,7 +620,9 @@
         border-radius: 20px;
         padding: 15px;
     }
-    input[type=text], textarea {
+
+    input[type=text],
+    textarea {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 12px;
         border: 1px solid #ccc;
@@ -564,9 +633,11 @@
         resize: vertical;
         width: 83%;
     }
+
     .other-inputs {
         width: 100%;
     }
+
     .name-email {
         width: 83%;
         padding: 12px;
@@ -577,32 +648,38 @@
         margin-bottom: 16px;
         resize: vertical;
     }
+
     .fa-user {
         font-size: 20px;
         padding: 13px;
     }
+
     .fa-envelope {
         font-size: 20px;
         padding: 11px;
         margin-right: 2px;
     }
+
     .button_contact {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         margin-top: 10px;
     }
+
     .submit_button {
         padding: 10px;
         border-radius: 20px;
         font-weight: 200;
         transition: background-color .3s ease-in-out;
-        background-color:white;
+        background-color: white;
     }
+
     .submit_button:hover {
         background-color: var(--blue);
         cursor: pointer;
     }
+
     #my-form-status {
         text-align: center;
         margin-top: 10px;
