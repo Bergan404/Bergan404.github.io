@@ -182,10 +182,10 @@
 
 
     /* Projects */
-    .sites_container {
+    /* .sites_container { */
         /* width: 1200px; */
         /* width: 100vw; */
-        width: 80%;
+        /* width: 80%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 2.5em;
@@ -193,12 +193,24 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 10px;
-    }
+    } */
 
-    .project-showcase {
-        margin: 10px 49px;
+    /* .project-showcase {
+        margin: 10px 49px; */
         /* width: 500px; */
-        text-align: center;
+        /* text-align: center;
+    } */
+    .spotlight.left .content, .spotlight.right .content {
+        height: 101%;
+        padding: 6em 3em;
+        top: 0;
+        width: 28em;
+    }
+    .spotlight.style4 .content {
+        border-color: var(--blue);
+    }
+    .spotlight.style5 .content {
+        border-color: var(--blue);
     }
 
 
@@ -524,7 +536,7 @@
 
 
     /* Projects */
-    .sites_container {
+    /* .sites_container {
         width: 100%;
         margin-top: 2.5em;
         margin-bottom: 2.5em;
@@ -533,6 +545,23 @@
     .project-showcase {
         margin: 40px 10px;
         text-align: center;
+    } */
+    .spotlight.left .content, .spotlight.right .content {
+        height: 101%;
+        padding: 20px ;
+        top: 0;
+        /* width: 28em; */
+    }
+    .spotlight.style5 .content {
+        border-color: none;
+        border: none;
+    }
+    .spotlight.style4 .content {
+        border-color: none;
+        border: none;
+    }
+    .content header {
+        margin-top: 50%;
     }
 
 
