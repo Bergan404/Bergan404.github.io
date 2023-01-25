@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="turn.min.js"></script>
+
+	<style type="text/css">
+		body {
+			background: #ccc;
+		}
+
+		#magazine {
+			width: 1152px;
+			height: 752px;
+		}
+
+		#magazine .turn-page {
+			background-color: #ccc;
+			background-size: 100% 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="magazine">
+		<div style="background-image:url(pages/bhg-01.png);"></div>
+		<div style="background-image:url(pages/bhg-02.png);"></div>
+		<div style="background-image:url(pages/bhg-03.png);"></div>
+		<div style="background-image:url(pages/bhg-04.png);"></div>
+		<div style="background-image:url(pages/bhg-05.png);"></div>
+		<div style="background-image:url(pages/bhg-06.png);"></div>
+		<div style="background-image:url(pages/bhg-07.png);"></div>
+		<div style="background-image:url(pages/bhg-08.png);"></div>
+		<div style="background-image:url(pages/bhg-09.png);"></div>
+		<div style="background-image:url(pages/bhg-10.png);"></div>
+		<div style="background-image:url(pages/bhg-11.png);"></div>
+		<div style="background-image:url(pages/bhg-12.png);"></div>
+		<div style="background-image:url(pages/bhg-13.png);"></div>
+		<div style="background-image:url(pages/bhg-14.png);"></div>
+		<div style="background-image:url(pages/bhg-15.png);"></div>
+		<div style="background-image:url(pages/bhg-16.png);"></div>
+		<div style="background-image:url(pages/bhg-17.png);"></div>
+		<div style="background-image:url(pages/bhg-18.png);"></div>
+		<div style="background-image:url(pages/bhg-19.png);"></div>
+		<div style="background-image:url(pages/bhg-20.png);"></div>
+
+	</div>
+
+
+	<script type="text/javascript">
+
+		$(window).ready(function () {
+			$('#magazine').turn({
+				display: 'double',
+				acceleration: true,
+				gradients: !$.isTouch,
+				elevation: 50,
+				when: {
+					turned: function (e, page) {
+						/*console.log('Current view: ', $(this).turn('view'));*/
+					}
+				}
+			});
+		});
+
+
+		$(window).bind('keydown', function (e) {
+
+			if (e.keyCode == 37)
+				$('#magazine').turn('previous');
+			else if (e.keyCode == 39)
+				$('#magazine').turn('next');
+
+		});
+
+	</script>
+
+</body>
+
+</html>
