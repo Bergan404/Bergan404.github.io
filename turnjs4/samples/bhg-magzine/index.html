@@ -20,14 +20,19 @@
 	<div id="canvas" style="background-image: url(turnjs4/samples/bhg-magzine/pages/green_lines.png);">
 
 		<div class="zoom-icon zoom-icon-in"></div>
-
-		<div class="magazine-viewport">
-			<div class="container">
-				<div class="magazine">
-					<!-- Next button -->
-					<div ignore="1" class="next-button"></div>
-					<!-- Previous button -->
-					<div ignore="1" class="previous-button"></div>
+		<div class="wrapper">
+			<div class="aspect">
+				<div class="aspect-inner">
+					<div class="magazine-viewport">
+						<div class="container">
+							<div class="magazine">
+								<!-- Next button -->
+								<div ignore="1" class="next-button"></div>
+								<!-- Previous button -->
+								<div ignore="1" class="previous-button"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -38,7 +43,7 @@
 
 		<!-- Thumbnails -->
 		<div class="thumbnails">
-			<div>
+			<!-- <div>
 				<ul>
 					<li class="i">
 						<img src="pages/1-thumb.jpg" width="76" height="100" class="page-1">
@@ -96,7 +101,7 @@
 					<ul>
 						<div>
 						</div>
-			</div>
+			</div> -->
 
 			<script type="text/javascript">
 				var audio = document.getElementById("audio");
@@ -120,11 +125,11 @@
 
 						// Magazine width
 
-						width: 922,
+						width: 1400,
 
 						// Magazine height
 
-						height: 600,
+						height: 900,
 
 						// Duration in millisecond
 
