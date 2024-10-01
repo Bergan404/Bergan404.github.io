@@ -1,0 +1,84 @@
+---
+import WPS from "../../assets/images/WPS/WPS-Logo.svg?raw";
+---
+
+<footer class="container-fluid footer p-3">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+            <a class="navbar-logo" href="/">
+                <Fragment set:html={WPS} />
+            </a>
+        </div>
+        <div class="col-auto">
+            <nav class="navigation-menu d-none d-md-flex align-items-center">
+                <div class="menu-primary-container">
+                    <ul id="menu-primary" class="menu">
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom"
+                        >
+                            <a href="/CodeViolationSolutions">Code Violation Solutions</a>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom"
+                        >
+                            <a href="/BuildingViolationSolutions">Building Violation Solutions</a>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom"
+                        >
+                            <a href="/PermittingSolutions">Permitting Solutions</a>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom"
+                        >
+                            <a href="/UnsafeStructureViolations">Unsafe structure violations</a>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom"
+                        >
+                            <a href="/GeneralConsultations">General Consultations</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<style lang="scss">
+    .footer {
+        background-color: black;
+
+        .navbar-logo {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navigation-menu {
+            justify-content: center;
+            .menu {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                text-align: right;
+
+                .menu-item {
+                    margin: 0px 15px 0px 15px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        font-family: Aktiv_Bold, sans-serif;
+                        transition: all 0.2s ease-in-out;
+
+                        &:hover {
+                            color: #C2AA95;
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

@@ -1,0 +1,54 @@
+/* COLORS */
+$light-tan: #D9CFC5;
+$color-tan: #C2AA95;
+$color-blue: #536F9A;
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+/* MIN-WIDTH */
+
+@mixin xxl-screen {
+    @media (min-width: 1500px) { @content; }
+}
+
+@mixin xl-screen {
+    @media (min-width: 1280px) { @content; }
+}
+
+@mixin lg-screen {
+    @media (min-width: 992px) { @content; }
+}
+
+@mixin md-screen {
+    @media (min-width: 768px) { @content; }
+}
+
+@mixin sm-screen{
+    @media (min-width: 576px) { @content; }
+}
+
+/* MAX-WIDTH */
+
+@mixin lg-desktop {
+    @media (max-width: 1280px) { @content; }
+}
+
+@mixin md-desktop {
+    @media (max-width: 992px) { @content; }
+}
+
+@mixin sm-desktop {
+    @media (max-width: 768px) { @content; }
+}
+
+@mixin mobile {
+    @media (max-width: 576px) { @content; }
+}
+
+@mixin side-ways-phone {
+    @media (max-height: 576px) { @content; }
+}
+
+@import "global";
+@import "extra/additional-styles";
+@import "extra/carousel-slider";

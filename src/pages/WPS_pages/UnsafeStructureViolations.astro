@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/Layout_WPS.astro';
+
+import KeyPoints from '../../components/KeyPoints.astro';
+
+import StepByStep from '../../components/StepByStep.astro';
+import ContactBox from '../../components/ContactBox.astro';
+import HeroSection from '../../components/HeroSection.astro';
+
+import Violations from "../../assets/images/WPS/WPS-Home_repairs.png";
+import Approval from "../../assets/images/WPS/approval.png";
+import Agreement from "../../assets/images/WPS/agreement.png";
+import Inspection from "../../assets/images/WPS/inspection.png";
+import Resolution from "../../assets/images/WPS/approval (1).png";
+---
+
+<Layout title="WPS - Unsafe Structure Violations">
+    <HeroSection
+		imagePath={Violations}
+		title="Unsafe Structure Violations"
+		body="When safety is at stake, trust Whiddon Property Solutions to handle unsafe structure violations with speed and professionalism. We work with officials to resolve the issue, so you don't have to."
+	/>
+
+	<section class="text_content_background">
+		<div class="container py-3">
+			<h4 class="baskervville-regular text-center">Understanding Unsafe Structure Violations</h4>
+            <div  class="text-center py-3">
+                <p>Unsafe structure violations can include damage to foundations, walls, or roofs that pose immediate risks to occupants and neighboring properties. These violations require swift corrective action to avoid penalties or further harm.</p>
+                <p>Delaying the resolution of unsafe structure violations can result in steep penalties, legal fees, or even forced evacuation. Taking quick action not only saves money but ensures the safety of everyone involved</p>
+            </div>
+
+			<h4 class="baskervville-regular text-center">How We Resolve Unsafe Structure Violations</h4>
+
+            <StepByStep
+				imagePath={Agreement}
+				title="Immediate Assessment and Consultation"
+				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			/>
+
+			<StepByStep
+				imagePath={Approval}
+				title="Communication with Inspectors and Officials"
+				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			/>
+
+			<StepByStep
+				imagePath={Inspection}
+				title="Coordination of Repairs or Adjustments"
+				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			/>
+
+            <StepByStep
+				imagePath={Resolution}
+				title="Compliance Submission and Case Follow-Up"
+				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			/>
+
+			<ContactBox
+				text="Need Help with a Unsafe Structure Violations? Contact Us Today for a Free Consultation."
+			/>
+
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.home_content {
+		background-size: cover;
+	}
+	.image_box img{
+		width: 100%;
+		height: 100%;
+	}
+</style>

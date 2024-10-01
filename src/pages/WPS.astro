@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout_WPS.astro';
+
+import Image from 'astro/components/Image.astro';
+import ContactBox from '../components/ContactBox.astro';
+import Button from '../components/extra/button.astro';
+
+import HouseOpen from "../assets/videos/WPS-Hero_video.mp4";
+import Broward from "../assets/images/WPS/waterfront_fort_lauderdale.png";
+import HandShake from "../assets/images/WPS/shaking_hands.png";
+import Phone from "../assets/images/WPS/phone_call.png";
+import Relax from "../assets/images/WPS/relax.png";
+---
+
+<Layout title="Whiddon Property Solutions">
+	<header class="hero container">
+		<video autoplay muted loop id="houseopen">
+			<source src={HouseOpen} type="video/mp4">
+		</video>
+		<div class="overlay"></div>
+		<div class="hero-content hero_text_shadow" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000" data-aos-delay="0">
+			<h4 class="baskervville-regular">WHIDDON PROPERTY SOLUTIONS</h4>
+			<p>We offer a white-glove experience designed to address and resolve issues such as</p>
+			<ul class="inline word-alts">
+				<li>code violations</li>
+				<li>general permitting difficulties</li>
+				<li>property-related concerns</li>
+			</ul>
+			<Button
+				link="/"
+				text="Work With Us"
+			/>
+		</div>
+	</header>
+
+	<section class="text_content_background">
+		<div class="container py-3">
+			<h4 class="baskervville-regular text-center">Why Choose Whiddon Property Solutions?</h4>
+
+			<div class="row align-items-center py-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+				<div class="col-5 image_box">
+					<Image src={Broward} alt="Broward Counties Beautiful Waterfront" class="left_shadow"/>
+				</div>
+				<p class="col-7 text-center">Whiddon Property Solutions is a premier concierge service specializing in comprehensive solutions and management of property-related challenges for homeowners and property owners in the Broward County of South Florida.</p>
+			</div>
+
+			<div class="row align-items-center flex-row-reverse py-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
+				<div class="col-5 image_box">
+					<Image src={HandShake} alt="We take care of the work" class="right_shadow"/>
+				</div>
+				<p class="col-7 text-center">Our dedicated team will take on the heavy lifting by overseeing all interactions with city workers, clerks, inspectors, and other officials, all the way until each case is closed and resolved to the property owner’s satisfaction. We ensure that every necessary document and form is meticulously managed, signed, and submitted, alleviating the burden from our clients and expediting the resolution process.</p>
+			</div>
+
+			<div class="row align-items-center py-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+				<div class="col-5 image_box">
+					<Image src={Phone} alt="Customer Service" class="left_shadow"/>
+				</div>
+				<p class="col-7 text-center">
+					We pride ourselves on our around-the-clock customer service, commitment to timely resolutions, and transparency by providing regular updates and maintaining open lines of communication to ensure that our clients are always informed about the status of their property.</p>
+			</div>
+
+			<div class="row align-items-center flex-row-reverse py-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
+				<div class="col-5 image_box">
+					<Image src={Relax} alt="Relax while we do the work" class="right_shadow"/>
+				</div>
+				<p class="col-7 text-center">
+					Serving all of Broward County, Whiddon Property Solutions is your trusted partner for seamless property management and compliance, allowing you to focus on what matters most while we handle the intricacies of property care.</p>
+			</div>
+
+			<ContactBox
+				text="Need Help? Contact Us Today for a Free Consultation."
+			/>
+		</div>
+
+	</section>
+</Layout>
+
+<style>
+	header {
+		margin: auto;
+		padding: 1rem;
+		/* width: 800px; */
+		/* max-width: calc(100% - 2rem); */
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		height: 100vh;
+	}
+	#houseopen {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.hero-content {
+		display: grid;
+		place-content: center;
+		height: 100vh;
+		width: 100%;
+		z-index: 10;
+		position: relative;
+		text-align: center;
+	}
+	.home_content {
+		background-size: cover;
+	}
+	.image_box img{
+		width: 100%;
+		height: 100%;
+	}
+</style>

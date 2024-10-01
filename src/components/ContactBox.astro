@@ -1,0 +1,29 @@
+---
+import Button from './extra/button.astro';
+
+interface Props {
+	text: string;
+}
+
+const { text } = Astro.props
+
+---
+
+<div class="big_blue">
+	<p class="bold">{text}</p>
+    <Button
+        link="nul"
+        text="Contact Us"
+    />
+</div>
+
+<style>
+    .big_blue {
+        background: #536F9A;
+        border-radius: 15px;
+        padding: 2em;
+        color: white;
+        text-align: center;
+        margin: 3em 0em;
+    }
+</style>

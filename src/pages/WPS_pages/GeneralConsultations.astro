@@ -1,0 +1,66 @@
+---
+import Layout from '../../layouts/Layout_WPS.astro';
+
+import KeyPoints from '../../components/KeyPoints.astro';
+
+import StepByStep from '../../components/StepByStep.astro';
+import ContactBox from '../../components/ContactBox.astro';
+import HeroSection from '../../components/HeroSection.astro';
+
+import Violations from "../../assets/images/WPS/WPS-General_consultations.png";
+import Agreement from "../../assets/images/WPS/agreement.png";
+import House from "../../assets/images/WPS/house.png";
+import Book from "../../assets/images/WPS/book.png";
+import Clock from "../../assets/images/WPS/clock.png"
+---
+
+<Layout title="WPS - General Consultations">
+    <HeroSection
+		imagePath={Violations}
+		title="General Consultations"
+		body="Expert advice is just a call away. Whether you're facing complex property issues or need general guidance, Whiddon Property Solutions is here to help."
+	/>
+
+	<section class="text_content_background">
+		<div class="container py-3">
+			<h4 class="baskervville-regular text-center">Comprehensive Guidance for Property Owners</h4>
+            <p class="text-center py-3">Our consultations cover a wide range of property challenges, from navigating city ordinances and regulations to resolving complex legal issues. No matter the difficulty, our experienced team will provide you with tailored solutions.</p>
+
+			<h4 class="baskervville-regular text-center">Why Choose Whiddon Property Solutions for Your Consultation?</h4>
+
+            <div class="row gap-2">
+                <KeyPoints
+                    imagePath={Clock}
+                    text="Around-the-clock availability."
+                />
+                <KeyPoints
+                    imagePath={Book}
+                    text="In-depth knowledge of Broward County regulations."
+                />
+                <KeyPoints
+                    imagePath={House}
+                    text="Over a decade of experience resolving complex property issues."
+                />
+                <KeyPoints
+                    imagePath={Agreement}
+                    text="Dedicated team for personalized support."
+                />
+            </div>
+
+			<ContactBox
+				text="Need Help with General Consultations? Contact Us Today for a Free Consultation."
+			/>
+
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.home_content {
+		background-size: cover;
+	}
+	.image_box img{
+		width: 100%;
+		height: 100%;
+	}
+</style>

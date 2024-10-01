@@ -1,0 +1,77 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import "../assets/styles/index.css";
+import "../assets/styles/moon-stars.css";
+import "../assets/styles/loader.css";
+import "../assets/styles/scrollbar.css";
+import "../assets/styles/mobile.css";
+import "../assets/styles/projects.css";
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		 <!-- For the linkedin Feature page -->
+		<meta name="description" content="Bergan Oudshoorn Portfolio" />
+		<meta name="title" property="og:title" content="Bergan Oudshoorn Portfolio" />
+		<meta property="og:type" content="Website" />
+		<meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51440576491_95c947fb52_k.jpg" />
+		<meta name="description" property="og:description" content="App" />
+		<meta name="author" content="Bergan Oudshoorn" />
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+		<!-- <script type="text/javascript" src="turn.min.js"></script> -->
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+
+	<script src="../assets/scripts/form-submit.js"></script>
+	<script src="../assets/scripts/window-loader.js"></script>
+	<script src="../assets/scripts/drop-down-mobile.js"></script>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>

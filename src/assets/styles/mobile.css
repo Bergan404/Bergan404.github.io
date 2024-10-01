@@ -1,0 +1,716 @@
+/* For Destop and laptop view */
+@media only screen and (min-width: 851px) {
+
+    .stars {
+        overflow: hidden;
+        height: 100vh;
+        position: relative;
+        bottom: 300px;
+    }
+
+    .header h1 {
+        text-align: center;
+        font-size: 400%;
+        color: white;
+        position: relative;
+        top: 2em;
+    }
+
+    .header h3 {
+        text-align: center;
+        font-size: 150%;
+        color: white;
+        position: relative;
+        top: 5.5em;
+    }
+
+    .descriptive-text {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 30vh;
+        animation: fadeInAnimation2 ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+
+    .navbar {
+        text-align: center;
+        background-color: var(--something);
+        padding: 30px 0 30px 0;
+        /* width: 100%; */
+        /* width: 100vw; */
+    }
+
+    nav {
+        position: relative;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    li {
+        margin: 0 30px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-wrapper a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+
+    .nav-wrapper a::before,
+    .nav-wrapper a::after {
+        content: "";
+        height: 2px;
+        width: 0;
+        opacity: 0;
+        background-color: var(--blue);
+        position: absolute;
+        transition: all .5s;
+    }
+
+    .nav-wrapper a::before {
+        top: -3px;
+    }
+
+    .nav-wrapper a:after {
+        bottom: -3px;
+        right: 0;
+    }
+
+    .nav-wrapper a:hover::before,
+    .nav-wrapper a:hover::after {
+        width: calc(100% + 20px);
+        opacity: 0.7;
+    }
+
+
+    /* This is the about me section */
+    .about_me {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    /* Description about me */
+    .me {
+        vertical-align: baseline;
+    }
+
+    .me h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .me p {
+        font-size: 17px;
+        line-height: 28px;
+        width: 382px;
+    }
+
+
+    /* Picture */
+    .picture {
+        -ms-flex-align: center;
+    }
+
+    .picture img {
+        width: 250px;
+        height: 250px;
+        box-shadow: 5px 5px #6b6e7048;
+
+    }
+
+
+    /* Personal info */
+    .personal_info h2 {
+        margin-bottom: 20px;
+    }
+
+    .personal_info h4 {
+        border-bottom: 1px solid white;
+        font-size: 17px;
+        font-weight: normal;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+
+    .github-link {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .github-link a {
+        border: 1px solid #6b6e70;
+        border-radius: 50px;
+        padding: 10px;
+        box-shadow: 2px 2px #6b6e7057;
+        transition: background-color .3s ease-in-out;
+    }
+
+    .github-link a:hover {
+        background-color: var(--darkgray);
+    }
+
+    .fa-github {
+        font-size: 30px;
+        color: var(--blue);
+    }
+
+    .fa-linkedin-in {
+        font-size: 30px;
+        color: var(--blue);
+    }
+
+
+    /* Projects */
+    /* .sites_container { */
+        /* width: 1200px; */
+        /* width: 100vw; */
+        /* width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    } */
+
+    /* .project-showcase {
+        margin: 10px 49px; */
+        /* width: 500px; */
+        /* text-align: center;
+    } */
+    .spotlight.left .content, .spotlight.right .content {
+        height: 101%;
+        padding: 6em 3em;
+        top: 0;
+        width: 28em;
+    }
+    .spotlight.style4 .content {
+        border-color: var(--blue);
+    }
+    .spotlight.style5 .content {
+        border-color: var(--blue);
+    }
+
+
+    /* Skills */
+    .skills-container {
+        /* width: 1100px; */
+        /* width: 100vw;x */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .skills-header {
+        position: relative;
+        text-align: center;
+    }
+
+    .skills-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+
+    .skills-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 12em;
+        width: 50%;
+        box-sizing: inherit;
+    }
+
+    .skills-icons {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+
+    .skills-icons i {
+        margin: 50px;
+        font-size: 100px;
+    }
+
+
+    /* Contact Me */
+    .contact_me {
+        background: 0 0;
+        padding: 30px 0 80px;
+    }
+
+    .contact-header {
+        position: relative;
+        text-align: center;
+    }
+
+    .contact-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+
+    .contact-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 25em;
+        width: 50%;
+        box-sizing: inherit;
+    }
+
+    .validator_form {
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        background-color: #222629;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    input[type=text],
+    textarea {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    .other-inputs {
+        width: 100%;
+    }
+
+    .name-email {
+        width: 90%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    .fa-user {
+        font-size: 20px;
+        padding: 13px;
+    }
+
+    .fa-envelope {
+        font-size: 20px;
+        padding: 11px;
+        margin-right: 2px;
+    }
+
+    .button_contact {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .submit_button {
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 200;
+        transition: background-color .3s ease-in-out;
+        background-color: white;
+    }
+
+    .submit_button:hover {
+        background-color: var(--blue);
+        cursor: pointer;
+    }
+
+    #my-form-status {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Iphone X */
+@media only screen and (max-width: 850px) {
+    .stars {
+        overflow: hidden;
+        height: 100vh;
+        position: relative;
+        bottom: 388px;
+    }
+
+
+    html,
+    body {
+        min-width: 320px;
+    }
+
+
+    /* Header With my name and status */
+    .header h1 {
+        text-align: center;
+        font-size: 300%;
+        color: white;
+        position: relative;
+        top: 3em;
+    }
+
+    .header h3 {
+        text-align: center;
+        font-size: 150%;
+        color: white;
+        position: relative;
+        top: 6.5em;
+    }
+
+    /* Text under my name on the header */
+    .descriptive-text {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 25vh;
+        animation: fadeInAnimation2 ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        font-size: 20px;
+    }
+
+    /* When In mobile view there will be 3 lines that create a dropdown */
+    #menu {
+        width: 1.4em;
+        display: block;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #nav.js {
+        display: none;
+    }
+
+    .navbar {
+        text-align: center;
+        background-color: var(--something);
+        padding: 20px 0 20px 0;
+        width: 100%;
+    }
+
+    .nav-wrapper a {
+        font-size: 13.5px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    nav {
+        display: inline-block;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin: 5px 6px;
+    }
+
+
+    /* About me section of the site */
+    .about_me {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+
+    /* Description about me */
+    .me {
+        vertical-align: baseline;
+        margin-bottom: 12px;
+    }
+
+    .me h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .me p {
+        font-size: 14px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+
+    /* Picture */
+    .picture {
+        margin-top: 10px;
+        margin-bottom: 12px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .picture img {
+        width: 250px;
+        height: 250px;
+        box-shadow: 5px 5px #6b6e7048;
+    }
+
+
+    /* Personal info */
+    .personal_info h2 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .personal_info h4 {
+        border-bottom: 1px solid white;
+        font-size: 17px;
+        font-weight: normal;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+
+    .github-link {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .github-link a {
+        border: 1px solid #6b6e70;
+        border-radius: 50px;
+        padding: 10px;
+        box-shadow: 2px 2px #6b6e7057;
+        transition: background-color .3s ease-in-out;
+    }
+
+    .github-link a:hover {
+        background-color: var(--darkgray);
+    }
+
+    .fa-github {
+        font-size: 30px;
+        color: var(--blue);
+    }
+
+    .fa-linkedin-in {
+        font-size: 30px;
+        color: var(--blue);
+    }
+
+
+    /* Projects */
+    /* .sites_container {
+        width: 100%;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+    }
+
+    .project-showcase {
+        margin: 40px 10px;
+        text-align: center;
+    } */
+    .spotlight.left .content, .spotlight.right .content {
+        height: 101%;
+        padding: 20px ;
+        top: 0;
+        /* width: 28em; */
+    }
+    .spotlight.style5 .content {
+        border-color: none;
+        border: none;
+    }
+    .spotlight.style4 .content {
+        border-color: none;
+        border: none;
+    }
+    .content header {
+        margin-top: 50%;
+    }
+
+
+    /* Skills */
+    .skills-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .skills-header {
+        position: relative;
+        text-align: center;
+    }
+
+    .skills-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+
+    .skills-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 12em;
+        width: 50%;
+        box-sizing: inherit;
+    }
+
+    .skills-icons {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+
+    .skills-icons i {
+        margin: 50px;
+        font-size: 65px;
+    }
+
+
+    /* Contact Me */
+    #contact {
+        padding: 20px;
+    }
+
+    .contact_me {
+        background: 0 0;
+        padding: 30px 0 80px;
+    }
+
+    .contact-header {
+        position: relative;
+        text-align: center;
+    }
+
+    .contact-h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+    }
+
+    .contact-header::after {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 0.2em;
+        max-width: 25em;
+        width: 100%;
+        box-sizing: inherit;
+    }
+
+    .validator_form {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        background-color: #222629;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    input[type=text],
+    textarea {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        width: 83%;
+    }
+
+    .other-inputs {
+        width: 100%;
+    }
+
+    .name-email {
+        width: 83%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    .fa-user {
+        font-size: 20px;
+        padding: 13px;
+    }
+
+    .fa-envelope {
+        font-size: 20px;
+        padding: 11px;
+        margin-right: 2px;
+    }
+
+    .button_contact {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .submit_button {
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 200;
+        transition: background-color .3s ease-in-out;
+        background-color: white;
+    }
+
+    .submit_button:hover {
+        background-color: var(--blue);
+        cursor: pointer;
+    }
+
+    #my-form-status {
+        text-align: center;
+        margin-top: 10px;
+    }
+}

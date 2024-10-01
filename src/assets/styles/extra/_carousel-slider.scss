@@ -1,0 +1,163 @@
+.slider {
+    position: relative;
+    width: 50%;
+    height: 32vw;
+    margin: 0px auto;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    border-radius: 12px;
+
+    input[type=radio] {
+        position: relative;
+        top: 108%;
+        left: 50%;
+        width: 20px;
+        /* Slightly larger */
+        height: 20px;
+        /* Slightly larger */
+        margin: 0 15px 0 0;
+        background: #ccc;
+        /* Light gray */
+        border: 2px solid #ccc;
+        /* Light gray */
+        border-radius: 50%;
+        /* Rounded corners */
+        cursor: pointer;
+        transform: translateX(-83px);
+        transition: background 300ms ease, border 300ms ease;
+        /* Smooth transition */
+
+        &::checked {
+            background: #FF5A5F;
+            /* Airbnb's coral red */
+            border: 2px solid #FF5A5F;
+            /* Airbnb's coral red */
+        }
+    }
+
+    label {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 12px;
+        object-fit: contain;
+        /* Rounded corners */
+        transition: transform 400ms ease, opacity 400ms ease;
+        /* Added opacity transition */
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 12px;
+            object-fit: contain;
+            /* Rounded corners */
+            transition: transform 400ms ease, opacity 400ms ease;
+            /* Added opacity transition */
+        }
+    }
+}
+
+/* Existing transition rules */
+#s1-apparel:checked~#slide1,
+#s2-apparel:checked~#slide2,
+#s3-apparel:checked~#slide3,
+#s4-apparel:checked~#slide4,
+#s5-apparel:checked~#slide5,
+#s1-uiux:checked~#slide1,
+#s2-uiux:checked~#slide2,
+#s3-uiux:checked~#slide3,
+#s4-uiux:checked~#slide4,
+#s5-uiux:checked~#slide5,
+#s1-album:checked~#slide1,
+#s2-album:checked~#slide2,
+#s3-album:checked~#slide3,
+#s4-album:checked~#slide4,
+#s5-album:checked~#slide5 {
+    // box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+}
+
+#s1-apparel:checked~#slide2,
+#s2-apparel:checked~#slide3,
+#s3-apparel:checked~#slide4,
+#s4-apparel:checked~#slide5,
+#s5-apparel:checked~#slide1,
+#s1-uiux:checked~#slide2,
+#s2-uiux:checked~#slide3,
+#s3-uiux:checked~#slide4,
+#s4-uiux:checked~#slide5,
+#s5-uiux:checked~#slide1,
+#s1-album:checked~#slide2,
+#s2-album:checked~#slide3,
+#s3-album:checked~#slide4,
+#s4-album:checked~#slide5,
+#s5-album:checked~#slide1 {
+    // box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(20%, 0, -100px);
+    opacity: .6;
+}
+
+#s1-apparel:checked~#slide3,
+#s2-apparel:checked~#slide4,
+#s3-apparel:checked~#slide5,
+#s4-apparel:checked~#slide1,
+#s5-apparel:checked~#slide2,
+#s1-uiux:checked~#slide3,
+#s2-uiux:checked~#slide4,
+#s3-uiux:checked~#slide5,
+#s4-uiux:checked~#slide1,
+#s5-uiux:checked~#slide2,
+#s1-album:checked~#slide3,
+#s2-album:checked~#slide4,
+#s3-album:checked~#slide5,
+#s4-album:checked~#slide1,
+#s5-album:checked~#slide2 {
+    // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(40%, 0, -250px);
+    opacity: .3;
+}
+
+#s1-apparel:checked~#slide4,
+#s2-apparel:checked~#slide5,
+#s3-apparel:checked~#slide1,
+#s4-apparel:checked~#slide2,
+#s5-apparel:checked~#slide3,
+#s1-uiux:checked~#slide4,
+#s2-uiux:checked~#slide5,
+#s3-uiux:checked~#slide1,
+#s4-uiux:checked~#slide2,
+#s5-uiux:checked~#slide3,
+#s1-album:checked~#slide4,
+#s2-album:checked~#slide5,
+#s3-album:checked~#slide1,
+#s4-album:checked~#slide2,
+#s5-album:checked~#slide3 {
+    // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(-40%, 0, -250px);
+    opacity: .3;
+}
+
+#s1-apparel:checked~#slide5,
+#s2-apparel:checked~#slide1,
+#s3-apparel:checked~#slide2,
+#s4-apparel:checked~#slide3,
+#s5-apparel:checked~#slide4,
+#s1-uiux:checked~#slide5,
+#s2-uiux:checked~#slide1,
+#s3-uiux:checked~#slide2,
+#s4-uiux:checked~#slide3,
+#s5-uiux:checked~#slide4,
+#s1-album:checked~#slide5,
+#s2-album:checked~#slide1,
+#s3-album:checked~#slide2,
+#s4-album:checked~#slide3,
+#s5-album:checked~#slide4 {
+    // box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(-20%, 0, -100px);
+    opacity: .6;
+}

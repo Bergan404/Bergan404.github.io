@@ -1,0 +1,26 @@
+{
+  "name": "the-everything",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.10",
+    "aos": "^2.3.4",
+    "astro": "^4.15.9",
+    "astro-bootstrap": "^0.7.0",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.79.4",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7"
+  }
+}

@@ -1,0 +1,340 @@
+---
+import Image from 'astro/components/Image.astro';
+import Layout from '../layouts/Layout.astro';
+
+import BetterMe from "../assets/images/Portfolio/the_better_me.jpg";
+import GoodGames from "../assets/images/Portfolio/GoodGames.png";
+import Echo from "../assets/images/Portfolio/Echo.png";
+import BMW from "../assets/images/Portfolio/Bavarians.png";
+---
+
+<Layout title="Welcome to Astro.">
+	<div class="navbar">
+        <nav class="nav-wrapper" id="nav">
+            <!-- Normal Navbar for big screens -->
+            <ul>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a
+                        href="https://docs.google.com/document/d/e/2PACX-1vSgt-7nSVSTn6_0p6WhxwLExnoehuiOqisMnvdXYzBipViqvGKpd2KBOZ0NONGsqIl3JySBoveOxY0B/pub">Resume</a>
+                </li>
+                <!-- <li><a href="turnjs4/samples/bhg-magzine/index.html">Turn.js</a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+    <section class="header">
+        <div class="name">
+            <h1>Bergan Oudshoorn</h1>
+            <h3>Software Developer</h3>
+        </div>
+        <div class="moon behind"></div>
+        <div>
+            <h2 class="descriptive-text">Ready to grow with every new experience</h2>
+        </div>
+        <div class="stars">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+    </section>
+
+    <div class="everything">
+        <section id="about_me">
+            <div class="about_me">
+                <div class="me">
+                    <h2>A Little About Me</h2>
+                    <p>I'm Bergan and I'm a software developer and former
+                        student of the prestigious App Academy. I mastered the fundamentals
+                        of programming languages such as Java, Python and React. I became
+                        a programmer to develop a more creative and structured way of thinking
+                        and to strengthen my problem solving skills. I'm looking for a challenging
+                        environment that is fast paced with opportunities to learn, grow and develop.
+                    </p>
+                </div>
+                <div class="picture">
+					<Image src={BetterMe} alt="ME" />
+                </div>
+                <div class="personal_info">
+                    <h2>Personal Info</h2>
+                    <h4>
+                        <span>Name -> </span>
+                        Bergan Oudshoorn
+                    </h4>
+                    <h4>
+                        <span>Email -> </span>
+                        Bergan404@gmail.com
+                    </h4>
+                    <h4>
+                        <span>Address -> </span>
+                        Miramar, FL
+                    </h4>
+
+                    <div class="github-link">
+                        <a href="https://github.com/Bergan404">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bergan-oudshoorn-2475331a6/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-container">
+                <br>
+                <header class="projects-header">
+                    <h2 class="projects-h2">Projects</h2>
+                </header>
+
+
+                <!-- <div class="sites_container">
+                    <div class="project-showcase">
+                        <a href="https://bandtogether-aa.herokuapp.com/" class="image_site"><i
+                                class="fas fa-music site"></i></a>
+                        <p>Band Together is an internet forum that allows the users to connect with one another on
+                            certain types of music.</p>
+                        <a href="https://github.com/nkuek/band-together" class="github">Github Repo</a>
+                    </div>
+                    <div class="project-showcase">
+                        <a href="https://goodgames-appacademy.herokuapp.com/" class="image_site"><img
+                                src="images/GIF-white.gif" alt="goodgames" class="goodgames site" /></a>
+                        <p>GoodGames is a site that allows users to learn more about how people feel about a certain
+                            game, and they are given the opprotunity to tell others how they feel about a certain game
+                            as well.</p>
+                        <a href="https://github.com/cubOlson/GoodGames" class="github">Github Repo</a>
+                    </div>
+                    <div class="project-showcase">
+                        <a href="https://circuit-bytes.herokuapp.com/" class="image_site"><img
+                                src="images/LogoMakr-7mEEtz.png" alt="circuitbytes" class="circuitbytes site" /></a>
+                        <p>CircuitBytes is an Etsy like app that allows the user to post and sell anything electronic to
+                            their consumer, being it is handmade or a digital download.</p>
+                        <a href="https://github.com/Bergan404/CircuitBytes" class="github">Github Repo</a>
+                    </div>
+                    <div class="project-showcase">
+                        <a href="https://echo-cord.herokuapp.com/" class="image_site"><img src="images/echo_logo.png"
+                                alt="echo" class="echo site" /></a>
+                        <p>Echo is a site that uses Flask, React, and Redux that takes the use of web sockets to create
+                            a seamless live messaging server application.</p>
+                        <a href="https://github.com/Bergan404/Echo" class="github">Github Repo</a>
+                    </div>
+                    <div class="project-showcase">
+                        <a href="https://bavarians-r-us.herokuapp.com/" class="image_site"><img
+                                src="images/bmw-logo.png" alt="bmw" class="bmw site" /></a>
+                        <p>Bavarians"R"Us is a site that is built with Flask, React, and Redux and is built for the BMW
+                            enthusiast, it givers users the chance to collaborate and post items for other users to take
+                            a look at.</p>
+                        <a href="https://github.com/Bergan404/Bavarians-R-Us" class="github">Github Repo</a>
+                    </div>
+                </div> -->
+
+
+                <section id="portfolio" class="spotlight style5 left"
+                    style=`background-position: center -3px; background-image: url(${GoodGames});`>
+                    <span class="image fit main"></span>
+                    <div class="content">
+                        <header>
+                            <h2 class="project-title-scroll">Good Games</h2>
+                            <p class="portfolio-tech">
+                                Pug, Express.js, AJAX, HTML5, CSS3
+                            </p>
+                        </header>
+                        <p class="project-paragraph">
+                            GoodGames is a site that allows users to learn more about how people feel about a certain
+                            game, and they are given the opprotunity to tell others how they feel about a certain game
+                            as well.
+                        </p>
+                        <ul class="actions">
+                            <li>
+                                <a href="https://goodgames-appacademy.herokuapp.com/" target="_blank"
+                                    class="live">Live</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/cubOlson/GoodGames" target="_blank"
+                                    class="button">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="portfolio2" class="spotlight style4 right"
+                    style=`background-position: center -3px; background-image: url(${Echo});`>
+                    <span class="image fit main"></span>
+                    <div class="content">
+                        <header>
+                            <h2 class="project-title-scroll">Echo</h2>
+                            <p class="portfolio-tech">
+                                React, Redux, JavaScript, Python, Flask, Flask-Socket.IO,
+                                SQLAlchemy
+                            </p>
+                        </header>
+                        <p class="project-paragraph">
+                            A clone of the popular gaming platform, Discord, Echo is a site that uses Flask, React, and
+                            Redux that takes the use of web sockets to create a seamless live messaging server,
+                            autocompleting search functionality, and ability to browse public groups by category.
+                        </p>
+                        <ul class="actions">
+                            <li>
+                                <a href="https://echo-cord.herokuapp.com/" target="_blank" class="live">Live</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Bergan404/Echo" target="_blank" class="button">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="portfolio3" class="spotlight style5 left"
+                    style=`background-position: center -3px; background-image: url(${BMW});`>
+                    <span class="image fit main"></span>
+                    <div class="content">
+                        <header>
+                            <h2 class="project-title-scroll">Bavarians "R" Us</h2>
+                            <p class="portfolio-tech">
+                                React, Redux, JavaScript, Python, Flask, SQLAlchemy
+                            </p>
+                        </header>
+                        <p class="project-paragraph">
+                            Bavarians"R"Us is a site that is built with Flask, React, and Redux and is built for the BMW
+                            enthusiast, it givers users the chance to collaborate and post items for other users to take
+                            a look at.
+                        </p>
+                        <ul class="actions">
+                            <li>
+                                <a href="https://bavarians-r-us.herokuapp.com/" target="_blank" class="live">Live</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Bergan404/Bavarians-R-Us" target="_blank"
+                                    class="button">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills-container">
+                <br>
+                <header class="skills-header">
+                    <h2 class="skills-h2">Skills</h2>
+                </header>
+                <div class="skills-icons">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-react-original colored"></i>
+                    <i class="devicon-redux-original colored"></i>
+                    <i class="devicon-express-original-wordmark"></i>
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <i class="devicon-postgresql-plain-wordmark colored"></i>
+                    <i class="devicon-python-plain-wordmark colored"></i>
+                    <i class="devicon-flask-original-wordmark"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-sequelize-plain colored"></i>
+                    <i class="devicon-sqlalchemy-original-wordmark"></i>
+                    <i class="devicon-docker-plain-wordmark colored"></i>
+                    <i class="devicon-mysql-plain-wordmark colored"></i>
+                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    <i class="devicon-wordpress-plain"></i>
+                    <i class="devicon-php-plain colored"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact_me">
+                <header class="contact-header">
+                    <h2 class="contact-h2">Lets Get in Touch</h2>
+                </header>
+                <form id="my-form" class="validator_form" action="https://formspree.io/f/xwkapwny" method="POST">
+                    <label for="Name"><i class="far fa-user"></i></label>
+                    <input class="name-email" type="text" placeholder="Name" name="Name" required>
+
+                    <label for="Email"><i class="far fa-envelope"></i></label>
+                    <input class="name-email" type="email" placeholder="Email" name="Email" required>
+
+                    <textarea id="message" name="Message" placeholder="Your Message..." style="height:200px"
+                        class="other-inputs" required></textarea>
+
+                    <div class="button_contact">
+                        <input type="hidden" name="_next" value="index.html" />
+                        <button id="form-button" class="submit_button" type="submit" value="submit">Send Email</button>
+                    </div>
+                    <p id="my-form-status"></p>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <footer class="footer">
+        <p><strong>©Bergan Oudshoorn</strong> All Rights Reserved</p>
+    </footer>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

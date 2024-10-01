@@ -1,0 +1,35 @@
+---
+interface Props {
+	text: string;
+    link: string;
+}
+
+const { text , link } = Astro.props
+
+---
+<a href={link}>
+    <button class="outlined_button">
+        <p>{text}</p>
+    </button>
+</a>
+
+<style lang="scss" is:global>
+    .outlined_button {
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 15px;
+        color: black;
+        padding: 5px 25px;
+        transition: .2s ease-in-out;
+
+        p {
+            margin: 0 !important;
+        }
+
+        &:hover {
+            background-color: black;
+            color: #C2AA95;
+        }
+    }
+
+</style>
