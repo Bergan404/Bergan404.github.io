@@ -4,13 +4,16 @@ import Layout from '../../layouts/Layout_WPS.astro';
 import StepByStep from '../../components/StepByStep.astro';
 import ContactBox from '../../components/ContactBox.astro';
 import HeroSection from '../../components/HeroSection.astro';
+import KeyPoints from '../../components/KeyPoints.astro';
 
 import Violations from "../../assets/images/WPS//WPS-Code_violations.png";
-import Talk from "../../assets/images/WPS/talk.png";
-import Approval from "../../assets/images/WPS/approval.png";
-import Agreement from "../../assets/images/WPS/agreement.png";
-import Inspection from "../../assets/images/WPS/inspection.png";
-import Resolution from "../../assets/images/WPS/approval (1).png";
+import Dock from "../../assets/images/WPS/pier.png";
+import Kitchen from "../../assets/images/WPS/kitchen.png";
+import Bathroom from "../../assets/images/WPS/bathroom-cabinet.png";
+import Cabinet from "../../assets/images/WPS/kitchen-cabinet.png";
+import Window from "../../assets/images/WPS/windows.png";
+import Wall from "../../assets/images/WPS/brick-wall.png";
+import Door from "../../assets/images/WPS/door.png";
 ---
 
 <Layout title="WPS - Code Violation Solutions">
@@ -24,29 +27,53 @@ import Resolution from "../../assets/images/WPS/approval (1).png";
 		<div class="container py-3">
 			<h4 class="baskervville-regular text-center">How It Works</h4>
 
-			<StepByStep
-				imagePath={Talk}
-				title="Initial Consultation"
-				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			/>
+			<p class="text-center py-3">Whiddon Property Solutions resolves code violations across Miami-Dade, Broward, and Palm Beach Counties. Our team is committed to helping clients address all property code violation issues. It's crucial for violators to resolve these matters to avoid fines. We prioritize ensuring that our clients’ properties remain free from outstanding violations that could lead to consequences with local municipalities.</p>
 
-			<StepByStep
-				imagePath={Approval}
-				title="Document Review and Submission"
-				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			/>
+            <p class="text-center py-3">Whiddon property solutions works diligently to rectify all related property code violations. It is essential for violators to address these issues to prevent fines. We recognize that our clients’ primary concern is maintaining their properties without unresolved violations that could impact their standing with the cities.</p>
 
-			<StepByStep
-				imagePath={Agreement}
-				title="City Official Interaction"
-				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			/>
+			<h4 class="baskervville-regular text-center">Common Code Violations</h4>
 
-			<StepByStep
-				imagePath={Resolution}
-				title="Case Resolution"
-				body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			/>
+			<div class="row gap-2 justify-content-center">
+				<KeyPoints
+					imagePath={Dock}
+					text="Unpermitted Docks"
+				/>
+
+				<KeyPoints
+					imagePath={Kitchen}
+					text="Kitchen Renovations"
+				/>
+
+				<KeyPoints
+					imagePath={Bathroom}
+					text="Bathroom Renovations"
+				/>
+
+				<KeyPoints
+					imagePath={Cabinet}
+					text="Cabinet Replacements (remodeling)"
+				/>
+
+				<KeyPoints
+					imagePath={Window}
+					text="Windows"
+				/>
+
+				<KeyPoints
+					imagePath={Wall}
+					text="Wall Additions"
+				/>
+
+				<KeyPoints
+					imagePath={Door}
+					text="Doors"
+				/>
+			</div>
+
+			<p class="text-center py-3">We proudly serve Miami-Dade, Broward, and Palm Beach counties.</p>
+
+			<p class="text-center py-3">Our clientele ranges from single-family homeowners to multi-family unit investors, including realtors and title companies. Clients rely on our extensive expertise, backed by over 20 years of combined experience in Florida's permitting and code violation landscape within the real estate and construction sectors.</p>
+
 
 			<ContactBox
 				text="Need Help with a Code Violation? Contact Us Today for a Free Consultation."
