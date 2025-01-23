@@ -1,0 +1,273 @@
+---
+import Layout from "../layouts/Layout_Grant.astro";
+
+import SplashBackground from "../../assets/images/Grant/background-hero.jpg";
+
+import playbook from "../assets/images/Grant/playbook-includes-wide.png";
+import playbook_mobile from "../assets/images/Grant/playbook-includes-responsive.png";
+import Whatotherssay from "../assets/images/Grant/whatothersaresaying.png";
+import testimony_1 from "../assets/images/Grant/testimonial-1.jpeg";
+import testimony_2 from "../assets/images/Grant/testimonial-2.jpeg";
+import testimony_3 from "../assets/images/Grant/testimonial-3.jpeg";
+import testimony_4 from "../assets/images/Grant/steve-gardiner.jpeg";
+import testimony_5 from "../assets/images/Grant/testimonial-5.jpeg";
+import testimony_6 from "../assets/images/Grant/testimonial-6.jpeg";
+
+import playbook_header from "../assets/images/Grant/wcf-typ-playbooktitle.png";
+import playbook_cards from "../assets/images/Grant/wcf-typ-playbook-programs.png";
+import playbook_ebook from "../assets/images/Grant/playbook-free-ebook.png";
+
+import program_1 from "../assets/images/Grant/wcf-typ-program1.jpeg";
+import program_2 from "../assets/images/Grant/wcf-typ-program2.jpeg";
+import program_3 from "../assets/images/Grant/wcf-typ-program3.jpeg";
+import program_4 from "../assets/images/Grant/wcf-typ-program4.jpeg";
+import program_5 from "../assets/images/Grant/wcf-typ-program5.jpeg";
+import program_6 from "../assets/images/Grant/wcf-typ-program6.jpeg";
+import program_7 from "../assets/images/Grant/wcf-typ-program7.jpeg";
+import program_8 from "../assets/images/Grant/wcf-typ-program8.jpeg";
+import program_9 from "../assets/images/Grant/wcf-typ-program9.jpeg";
+
+import Image from "astro/components/Image.astro";
+
+import Countdown from "../components/Grant/Countdown.astro";
+---
+
+<Layout title="Grant Cardone">
+  <header
+    class="container-fluid grant-splash"
+    style="background-image: url(../Grant/background-hero.jpg);"
+  >
+    <div
+      class="font_22"
+      style="text-align: center; font-size: 48px; color: rgb(255, 255, 255);"
+    >
+      <b>Limited Time Special Offer: </b>Get Immediate Access To<br />My
+      "Playbook To Millions" Video Training Package...
+    </div>
+
+    <div class="video_section">
+      <div style="outline: none;">
+        <div
+          style="outline: none; cursor: pointer; display: block; margin-top: 0px; opacity: 1; position: relative;"
+        >
+          <div class="elVideoplaceholder col-md-12 col-lg-8 m-auto">
+            <script
+              src="https://fast.wistia.com/embed/medias/nphdn5mvop.jsonp"
+              async></script><script
+              src="https://fast.wistia.com/assets/external/E-v1.js"
+              async></script><span
+              class="wistia_embed wistia_async_nphdn5mvop popover=true popoverAnimateThumbnail=true"
+              style="display:inline-block;height:25em;position:relative;width:100%"
+              >&nbsp;</span
+            >
+          </div>
+          <div
+            style="margin-top: 20px; outline: none; cursor: pointer; display: block;"
+          >
+            <div
+              style="text-align: center; font-size: 22px; color: rgb(255, 255, 255);"
+            >
+              (Watch This Quick 2 Minute Video)<b><br /></b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Resused Component -->
+  <Countdown />
+
+  <section class="text-center containerInner container">
+    <!-- Playbook Section -->
+    <div class="my-4">
+      <div class="d-none d-md-block">
+        <Image src={playbook} alt="playbook" width="950" class="static_fit" />
+      </div>
+      <div class="d-md-none">
+        <Image src={playbook_mobile} alt="playbook" class="static_fit" />
+      </div>
+    </div>
+
+    <!-- See what others are saying -->
+    <div class="my-5">
+      <div>
+        <Image
+          src={Whatotherssay}
+          alt="What Others are Saying"
+          class="static_fit"
+        />
+      </div>
+      <div class="row justify-content-around px-5">
+        <div class="col-md-6 col-12">
+          <Image src={testimony_1} alt="testimony" class="testimony" />
+        </div>
+        <div class="col-md-6">
+          <Image src={testimony_2} alt="testimony" class="testimony" />
+        </div>
+        <div class="col-md-6">
+          <Image src={testimony_3} alt="testimony" class="testimony" />
+        </div>
+        <div class="col-md-6">
+          <Image src={testimony_4} alt="testimony" class="testimony" />
+        </div>
+        <div class="col-md-6">
+          <Image src={testimony_5} alt="testimony" class="testimony" />
+        </div>
+        <div class="col-md-6">
+          <Image src={testimony_6} alt="testimony" class="testimony" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Playbook Cards -->
+    <div class="text-center pb-3" style="font-size: 56px;">
+      <div><b>YOUR GUIDE TO FINANCIAL FREEDOM!</b></div>
+    </div>
+  </section>
+
+  <section
+    class="container-fluid grant-playbook"
+    style="background-image: url(../Grant/wcf-typ-playbook-bgfade.jpeg);"
+  >
+    <div class="text-center">
+      <div class="py-5">
+        <Image
+          src={playbook_header}
+          alt="What Others are Saying"
+          class="static_fit"
+        />
+      </div>
+      <Image
+        src={playbook_cards}
+        alt="What Others are Saying"
+        class="static_fit"
+      />
+    </div>
+  </section>
+
+  <section class="containerInner container">
+    <div style="color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
+      <h2>
+        420+ PAGE Grant Cardone's Playbook eBook Included Free... Perfect For
+        Your Phone Or Tablet
+      </h2>
+    </div>
+    <Image src={playbook_ebook} alt="EBOOK" class="testimony static_fit" />
+  </section>
+
+  <!-- Resused Component -->
+  <Countdown />
+
+  <section class="containerInner container">
+    <div
+      class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+    >
+      <div style="margin-top: 30px; outline: none; cursor: pointer;">
+        <div
+          style="text-align: left; font-size: 40px; color: rgb(38, 70, 100);"
+        >
+          <b>Ready To Create Wealth In Your Life?</b>
+        </div>
+      </div>
+      <div style="margin-top: 15px; outline: none; cursor: pointer;">
+        <div
+          style="text-align: left; color: rgb(38, 70, 100); font-size: 28px;"
+        >
+          <b>The Good news is you can!</b><div>
+            At 25 I was broke and in debt. Today, I have hundreds of different
+            Multiple Flows of Income providing me and my family with prosperity,
+            freedom and wealth.
+          </div>
+          <div><br /></div>
+          <div>Let me get you on the path to wealth today.</div>
+        </div>
+      </div>
+      <div
+        style="margin-top: 30px; outline: none; cursor: pointer; display: block;"
+      >
+        <div
+          style="text-align: center; font-size: 60px; color: rgb(38, 70, 100);"
+        >
+          <b>Here Is What You Get</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <Image src={program_1} alt="testimony" class="program static_fit" />
+      <Image src={program_2} alt="testimony" class="program static_fit" />
+      <Image src={program_3} alt="testimony" class="program static_fit" />
+      <Image src={program_4} alt="testimony" class="program static_fit" />
+      <Image src={program_5} alt="testimony" class="program static_fit" />
+      <Image src={program_6} alt="testimony" class="program static_fit" />
+      <Image src={program_7} alt="testimony" class="program static_fit" />
+      <Image src={program_8} alt="testimony" class="program static_fit" />
+      <Image src={program_9} alt="testimony" class="program static_fit" />
+    </div>
+  </section>
+
+  <!-- Resused Component -->
+  <Countdown />
+</Layout>
+
+<style>
+  .video_section {
+    outline: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  @media (max-width: 500px) {
+    .video_section {
+      outline: none;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .wistia_embed {
+      margin-top: 10px;
+      height: 200px !important;
+      /* width: 400px !important; */
+    }
+
+    .grant-playbook {
+      background-position: center;
+    }
+  }
+  .grant-splash {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(96, 96, 96); */
+  }
+  .testimony {
+    width: 100%;
+    object-fit: contain;
+  }
+  .grant-playbook {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: fill;
+    /* background-color: rgb(96, 96, 96); */
+  }
+  h2 {
+    font-size: 43px;
+    font-weight: 600;
+    color: #264664 !important;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .program {
+    padding: 5px;
+  }
+</style>
